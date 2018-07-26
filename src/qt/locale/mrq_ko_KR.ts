@@ -4136,8 +4136,8 @@ rpcpassword=%s
         <translation>환경설정에서 masternodeprivkey를 지정해야 합니다. 도움말을 참조하십시오.</translation>
     </message>
     <message>
-        <source>(55611 could be used only on mainnet)</source>
-        <translation>(55611 은 메인넷에서만 사용될 수 있습니다)</translation>
+        <source>(28028 could be used only on mainnet)</source>
+        <translation>(28028 은 메인넷에서만 사용될 수 있습니다)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -4148,8 +4148,8 @@ rpcpassword=%s
         <translation>(기본값: 1)</translation>
     </message>
     <message>
-        <source>(must be 55611 for mainnet)</source>
-        <translation>(메인넷 일경우 55611)</translation>
+        <source>(must be 28028 for mainnet)</source>
+        <translation>(메인넷 일경우 28028)</translation>
     </message>
     <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>

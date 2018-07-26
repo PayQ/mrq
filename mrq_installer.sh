@@ -10,7 +10,7 @@ COIN_REPO='https://github.com/PayQ/vrc.git'
 COIN_TGZ='https://github.com/PayQ/vrc/releases/download/v3.0.0.0/mirq-3.0.0-x86_64-linux-signed.tar.gz'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='mrq'
-COIN_PORT=55611
+COIN_PORT=28028
 RPC_PORT=55622
 
 NODEIP=$(curl -s4 icanhazip.com)

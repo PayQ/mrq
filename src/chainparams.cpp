@@ -86,7 +86,7 @@ public:
     {
         networkID = CBaseChainParams::MAIN;
         strNetworkID = "main";
-        nDefaultPort = 55611;
+        nDefaultPort = 28028;
 
         pchMessageStart[0] = 0xe1;
         pchMessageStart[1] = 0xab;
@@ -175,7 +175,7 @@ public:
     {
         networkID = CBaseChainParams::TESTNET;
         strNetworkID = "test";
-        nDefaultPort = 55633;
+        nDefaultPort = 28128;
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -197,7 +197,7 @@ public:
     {
         networkID = CBaseChainParams::REGTEST;
         strNetworkID = "regtest";
-        nDefaultPort = 55655;
+        nDefaultPort = 28228;
     }
     const Checkpoints::CCheckpointData& Checkpoints() const
     {
@@ -216,7 +216,7 @@ public:
     {
         networkID = CBaseChainParams::UNITTEST;
         strNetworkID = "unittest";
-        nDefaultPort = 55677;
+        nDefaultPort = 28328;
     }
 
     const Checkpoints::CCheckpointData& Checkpoints() const

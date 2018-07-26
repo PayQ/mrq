@@ -209,10 +209,10 @@ QT_TRANSLATE_NOOP("mrq-core", ""
 QT_TRANSLATE_NOOP("mrq-core", ""
 "You must specify a masternodeprivkey in the configuration. Please see "
 "documentation for help."),
-QT_TRANSLATE_NOOP("mrq-core", "(55611 could be used only on mainnet)"),
+QT_TRANSLATE_NOOP("mrq-core", "(28028 could be used only on mainnet)"),
 QT_TRANSLATE_NOOP("mrq-core", "(default: %s)"),
 QT_TRANSLATE_NOOP("mrq-core", "(default: 1)"),
-QT_TRANSLATE_NOOP("mrq-core", "(must be 55611 for mainnet)"),
+QT_TRANSLATE_NOOP("mrq-core", "(must be 28028 for mainnet)"),
 QT_TRANSLATE_NOOP("mrq-core", "<category> can be:"),
 QT_TRANSLATE_NOOP("mrq-core", "Accept command line and JSON-RPC commands"),
 QT_TRANSLATE_NOOP("mrq-core", "Accept connections from outside (default: 1 if no -proxy or -connect)"),
