@@ -54,10 +54,10 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x000000c3bb8288f6627ffcb2cd8444bb37ab2cb63146ce4abef121b842514bd6"));
+    (0, uint256("0x0000042aa8b8248df11e4c1bac3f5fe2cf3d5d6e41b26156fbd1538e5e06cf41"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1527163200, // * UNIX timestamp of last checkpoint block
+    1532635200, // * UNIX timestamp of last checkpoint block
     1,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     100        // * estimated number of transactions per day after checkpoint
@@ -67,7 +67,7 @@ static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
     boost::assign::map_list_of(0, uint256("0x001"));
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
-    1454124731,
+    1532635201,
     0,
     250};
 
@@ -75,7 +75,7 @@ static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
     boost::assign::map_list_of(0, uint256("0x001"));
 static const Checkpoints::CCheckpointData dataRegtest = {
     &mapCheckpointsRegtest,
-    1454124731,
+    1532635202,
     0,
     100};
 
@@ -92,7 +92,7 @@ public:
         pchMessageStart[1] = 0xab;
         pchMessageStart[2] = 0x3c;
         pchMessageStart[3] = 0xc1;
-        vAlertPubKey = ParseHex("046d0c7f8d7dbdb9c079ea9debf6ea21e081424ffae1a265798c5b127de80c7b34db70ac737dbdf3dda527b162d9b2cd2e08adc8a1dc81600132353c66e6c6439d");
+        vAlertPubKey = ParseHex("0487d04c4fd6d46162e92034d18a8db940ab05317288fcd2a633ebab6c7fc441e403b7fb8c9a23adc37606f6f8044de60e343d0a7bfc3ecfe2a8799a36bcb62cdf");
         
         bnProofOfWorkLimit = ~uint256(0) >> 20;
         nSubsidyHalvingInterval = 210000;
@@ -109,28 +109,28 @@ public:
         nModifierUpdateBlock = 1;
         nMaxMoneyOut = 21000000 * COIN;
 
-        const char* pszTimestamp = "Economics Nobel Laureate Robert Shiller Examines Bitcoin in Historical Context 2018-05-24";
+        const char* pszTimestamp = "start test valinor coin 26/07/2018 20/00";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 486604799 << CScriptNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
         txNew.vout[0].nValue = 50 * COIN;
-        txNew.vout[0].scriptPubKey = CScript() << ParseHex("04cb0789d8d4e26355219825cbf458661a8cd0739886ea2cee518bbd3a3f69081d29f157d3ce190b134b13f2819750ab14028d3e7317b3a6c87e15ec80b64c95f9") << OP_CHECKSIG;
+        txNew.vout[0].scriptPubKey = CScript() << ParseHex("04059e5c6c8d2cc86b8ef506543632855c71e950c3340ca818e258df6198cdf0b331d47d3eceec73ef0090be46d21fd79ca4b56f69d2a38a43bbc57edacaf69c46") << OP_CHECKSIG;
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1527163200;
+        genesis.nTime = 1532635200;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 20552486;
+        genesis.nNonce = 1000138;
 
         hashGenesisBlock = genesis.GetHash();
 
-        assert(hashGenesisBlock == uint256("0x000000c3bb8288f6627ffcb2cd8444bb37ab2cb63146ce4abef121b842514bd6"));
-        assert(genesis.hashMerkleRoot == uint256("0x6b578a5a983afad6a6ac8036acbc9c3a4416932e4d0aebed3ec0cb3d0d745a69"));
+        assert(hashGenesisBlock == uint256("0x0000042aa8b8248df11e4c1bac3f5fe2cf3d5d6e41b26156fbd1538e5e06cf41"));
+        assert(genesis.hashMerkleRoot == uint256("0x2134afa257687d164323ac78eb9e6b2b7c62447978c636481a20c141e98b270d"));
 
-        vSeeds.push_back(CDNSSeedData("server_1", "167.99.255.116"));
-        vSeeds.push_back(CDNSSeedData("server_2", "206.189.51.23"));
+        vSeeds.push_back(CDNSSeedData("server_1", "89.223.90.7"));
+        vSeeds.push_back(CDNSSeedData("server_2", "89.223.90.8"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 110);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 40);
@@ -153,9 +153,9 @@ public:
         fHeadersFirstSyncingActive = false;
 
         nPoolMaxTransactions = 3;
-        strSporkKey = "04e16ff44f62146eae8b68f8f71dd40e5fc03e460f1691ee19116883c98d4ec7f5669f9cab7d06fbdab6163f6e3ab57abb987ae38509eb52373adaefe8cd52b33c";
+        strSporkKey = "04f3c616dc98bd745c67b976bd14e1f1e26f8f84ab4a55c49625006b1e18d5121302a0187c81523dff18839fe91e40b91a3b80a34d57faadf1dccecbc9057d9bdb";
         strObfuscationPoolDummyAddress = "mf9DUEiKMYLd1ZMcfLLFna35tpZFbpA7i";
-        nStartMasternodePayments = 1527163200;
+        nStartMasternodePayments = 1532635200;
     }
 
     const Checkpoints::CCheckpointData& Checkpoints() const
