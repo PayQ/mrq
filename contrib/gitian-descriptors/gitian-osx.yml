@@ -1,5 +1,5 @@
 ---
-name: "vrc-osx-3.0"
+name: "vrc-osx-1.0.0.1"
 enable_cache: true
 suites:
 - "trusty"

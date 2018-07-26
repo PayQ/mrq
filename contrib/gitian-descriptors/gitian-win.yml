@@ -1,5 +1,5 @@
 ---
-name: "vrc-win-3.0"
+name: "vrc-win-1.0.0.1"
 enable_cache: true
 suites:
 - "trusty"

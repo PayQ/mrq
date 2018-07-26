@@ -1,5 +1,5 @@
 ---
-name: "vrc-win-signer"
+name: "vrc-win-1.0.0.1"
 suites:
 - "trusty"
 architectures:

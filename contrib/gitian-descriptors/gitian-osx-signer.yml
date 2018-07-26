@@ -1,5 +1,5 @@
 ---
-name: "vrc-dmg-signer"
+name: "vrc-dmg-1.0.0.1"
 suites:
 - "trusty"
 architectures:
