@@ -7,7 +7,7 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/mrqcoin/mrq-detached-sigs.git"
+- "url": "https://github.com/PayQ/vrc-detached-sigs.git"
   "dir": "signature"
 files:
 - "mrq-osx-unsigned.tar.gz"

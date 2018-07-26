@@ -44,7 +44,7 @@ Instructions: Homebrew
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone https://github.com/mrqcoin/mrq.git
+        git clone https://github.com/PayQ/vrc.git
         cd mrq
 
 2.  Build mrqd:

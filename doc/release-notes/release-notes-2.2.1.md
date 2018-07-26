@@ -1,13 +1,13 @@
 Mrq version 2.2.1 is now available from:
 
-  <https://github.com/mrqcoin/mrq/releases>
+  <https://github.com/PayQ/vrc/releases>
 
 This is a new minor version release, including various bug fixes and
 performance improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/mrqcoin/mrq/issues>
+  <https://github.com/PayQ/vrc/issues>
 
 Compatibility
 ==============

@@ -23,8 +23,8 @@ Build-Depends: debhelper,
  libprotobuf-dev, protobuf-compiler
 Standards-Version: 3.9.2
 Homepage: https://mirq.io
-Vcs-Git: git://github.com/mrqcoin/mrq.git
-Vcs-Browser: http://github.com/mrqcoin/mrq
+Vcs-Git: git://github.com/PayQ/vrc.git
+Vcs-Browser: http://github.com/PayQ/vrc
 
 Package: mrqd
 Architecture: any

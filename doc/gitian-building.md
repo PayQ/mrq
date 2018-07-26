@@ -377,7 +377,7 @@ and inputs.
 
 For example:
 ```bash
-URL=https://github.com/mrqcoin/mrq.git
+URL=https://github.com/PayQ/vrc.git
 COMMIT=b616fb8ef0d49a919b72b0388b091aaec5849b96
 ./bin/gbuild --commit mrq=${COMMIT} --url mrq=${URL} ../mrq/contrib/gitian-descriptors/gitian-linux.yml
 ./bin/gbuild --commit mrq=${COMMIT} --url mrq=${URL} ../mrq/contrib/gitian-descriptors/gitian-win.yml

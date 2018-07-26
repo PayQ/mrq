@@ -34,7 +34,7 @@ The following are developer notes on how to build Mrq on your native platform. T
 
 Development
 ---------------------
-The Mrq repo's [root README](https://github.com/mrqcoin/mrq/blob/master/README.md) contains relevant information on the development process and automated testing.
+The Mrq repo's [root README](https://github.com/PayQ/vrc/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
