@@ -1,21 +1,21 @@
 
 Debian
 ====================
-This directory contains files used to package vrqd/vrq-qt
-for Debian-based Linux systems. If you compile vrqd/vrq-qt yourself, there are some useful files here.
+This directory contains files used to package vrcd/vrc-qt
+for Debian-based Linux systems. If you compile vrcd/vrc-qt yourself, there are some useful files here.
 
-## vrq: URI support ##
+## vrc: URI support ##
 
 
-vrq-qt.desktop  (Gnome / Open Desktop)
+vrc-qt.desktop  (Gnome / Open Desktop)
 To install:
 
-	sudo desktop-file-install vrq-qt.desktop
+	sudo desktop-file-install vrc-qt.desktop
 	sudo update-desktop-database
 
 If you build yourself, you will either need to modify the paths in
-the .desktop file or copy or symlink your vrqqt binary to `/usr/bin`
-and the `../../share/pixmaps/vrq128.png` to `/usr/share/pixmaps`
+the .desktop file or copy or symlink your vrcqt binary to `/usr/bin`
+and the `../../share/pixmaps/vrc128.png` to `/usr/share/pixmaps`
 
-vrq-qt.protocol (KDE)
+vrc-qt.protocol (KDE)
 

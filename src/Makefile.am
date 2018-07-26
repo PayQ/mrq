@@ -64,15 +64,15 @@ bin_PROGRAMS =
 TESTS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += vrqd
+  bin_PROGRAMS += vrcd
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += vrq-cli vrq-tx
+  bin_PROGRAMS += vrc-cli vrc-tx
 endif
 
 .PHONY: FORCE
-# vrq core #
+# vrc core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   addrman.h \
@@ -180,7 +180,7 @@ obj/build.h: FORCE
 	  $(abs_top_srcdir)
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between vrqd and vrq-qt
+# server: shared between vrcd and vrc-qt
 libbitcoin_server_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS)
 libbitcoin_server_a_SOURCES = \
   addrman.cpp \
@@ -224,7 +224,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between vrqd and vrq-qt, but only linked
+# wallet: shared between vrcd and vrc-qt, but only linked
 # when wallet enabled
 
 libbitcoin_wallet_a_CFLAGS = -fPIC
@@ -305,7 +305,7 @@ univalue_libbitcoin_univalue_a_SOURCES = \
   univalue/univalue_escapes.h \
   univalue/univalue.h
 
-# common: shared between vrqd, and vrq-qt and non-server tools
+# common: shared between vrcd, and vrc-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_common_a_SOURCES = \
   allocators.cpp \
@@ -361,7 +361,7 @@ libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 libbitcoin_util_a_SOURCES += compat/glibcxx_compat.cpp
 endif
 
-# cli: shared between vrq-cli and vrq-qt
+# cli: shared between vrc-cli and vrc-qt
 libbitcoin_cli_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_SOURCES = \
   rpcclient.cpp \
@@ -371,7 +371,7 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-vrqd_LDADD = \
+vrcd_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UNIVALUE) \
@@ -382,40 +382,40 @@ vrqd_LDADD = \
   $(LIBSECP256K1)
 
 if ENABLE_ZMQ
-vrqd_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+vrcd_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
 
 if ENABLE_WALLET
-vrqd_LDADD += libbitcoin_wallet.a
+vrcd_LDADD += libbitcoin_wallet.a
 endif
-vrqd_SOURCES = vrqd.cpp
+vrcd_SOURCES = vrcd.cpp
 #
 
 if TARGET_WINDOWS
-vrqd_SOURCES += vrqd-res.rc
+vrcd_SOURCES += vrcd-res.rc
 endif
 
-vrqd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
-vrqd_CPPFLAGS = $(BITCOIN_INCLUDES)
-vrqd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+vrcd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
+vrcd_CPPFLAGS = $(BITCOIN_INCLUDES)
+vrcd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 
-# vrq-cli binary #
-vrq_cli_LDADD = \
+# vrc-cli binary #
+vrc_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBBITCOIN_UTIL) \
   $(BOOST_LIBS) \
   $(SSL_LIBS) \
   $(CRYPTO_LIBS)
 
-vrq_cli_SOURCES = \
-  vrq-cli.cpp
+vrc_cli_SOURCES = \
+  vrc-cli.cpp
 
-vrq_cli_CPPFLAGS = $(BITCOIN_INCLUDES)
+vrc_cli_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
 
-# vrq-tx binary #
-vrq_tx_LDADD = \
+# vrc-tx binary #
+vrc_tx_LDADD = \
   $(LIBBITCOIN_UNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UTIL) \
@@ -424,15 +424,15 @@ vrq_tx_LDADD = \
   $(BOOST_LIBS) \
   $(CRYPTO_LIBS)
 
-vrq_tx_SOURCES = vrq-tx.cpp
-vrq_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
+vrc_tx_SOURCES = vrc-tx.cpp
+vrc_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
-vrq_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+vrc_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-vrq_cli_SOURCES += vrq-cli-res.rc
+vrc_cli_SOURCES += vrc-cli-res.rc
 endif
-vrq_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+vrc_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if BUILD_BITCOIN_LIBS
 include_HEADERS = script/bitcoinconsensus.h

@@ -1,5 +1,5 @@
 ---
-name: "vrq-dmg-signer"
+name: "vrc-dmg-signer"
 suites:
 - "trusty"
 architectures:
@@ -10,7 +10,7 @@ remotes:
 - "url": "https://github.com/PayQ/vrc-detached-sigs.git"
   "dir": "signature"
 files:
-- "vrq-osx-unsigned.tar.gz"
+- "vrc-osx-unsigned.tar.gz"
 script: |
   WRAP_DIR=$HOME/wrapped
   mkdir -p ${WRAP_DIR}
@@ -27,11 +27,11 @@ script: |
     chmod +x ${WRAP_DIR}/${prog}
   done
 
-  UNSIGNED=vrq-osx-unsigned.tar.gz
-  SIGNED=vrq-osx-signed.dmg
+  UNSIGNED=vrc-osx-unsigned.tar.gz
+  SIGNED=vrc-osx-signed.dmg
 
   tar -xf ${UNSIGNED}
   OSX_VOLNAME="$(cat osx_volname)"
   ./detached-sig-apply.sh ${UNSIGNED} signature/osx
-  ${WRAP_DIR}/genisoimage -no-cache-inodes -D -l -probe -V "vrq-Qt" -no-pad -r -dir-mode 0755 -apple -o uncompressed.dmg signed-app
+  ${WRAP_DIR}/genisoimage -no-cache-inodes -D -l -probe -V "vrc-Qt" -no-pad -r -dir-mode 0755 -apple -o uncompressed.dmg signed-app
   ${WRAP_DIR}/dmg dmg uncompressed.dmg ${OUTDIR}/${SIGNED}

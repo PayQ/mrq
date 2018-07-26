@@ -1,6 +1,6 @@
 (note: this is a temporary file, to be added-to by anybody, and moved to release-notes at release time)
 
-vrq version *version* is now available from:
+vrc version *version* is now available from:
 
   <https://github.com/PayQ/vrc/releases>
 
@@ -14,7 +14,7 @@ Please report bugs using the issue tracker at github:
 Compatibility
 ==============
 
-vrq is extensively tested on multiple operating systems using
+vrc is extensively tested on multiple operating systems using
 the Linux kernel, macOS 10.8+, and Windows Vista and later.
 
 Microsoft ended support for Windows XP on [April 8th, 2014](https://www.microsoft.com/en-us/WindowsForBusiness/end-of-xp-support),
@@ -22,7 +22,7 @@ No attempt is made to prevent installing or running the software on Windows XP, 
 can still do so at your own risk but be aware that there are known instabilities and issues.
 Please do not report issues about Windows XP to the issue tracker.
 
-vrq should also work on most other Unix-like systems but is not
+vrc should also work on most other Unix-like systems but is not
 frequently tested on them.
 
 Notable Changes
@@ -65,4 +65,4 @@ Credits
 Thanks to everyone who directly contributed to this release:
 
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/vrqcoin-translations/).
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/vrccoin-translations/).

@@ -10,10 +10,10 @@
 
 /**
  * Name of client reported in the 'version' message. Report the same name
- * for both vrqd and vrq-qt, to make it harder for attackers to
+ * for both vrcd and vrc-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("vrq");
+const std::string CLIENT_NAME("vrc");
 
 /**
  * Client version number

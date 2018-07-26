@@ -26,7 +26,7 @@ import collections
 PATTERN_IPV4 = re.compile(r"^((\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})):(\d+)$")
 PATTERN_IPV6 = re.compile(r"^\[([0-9a-z:]+)\]:(\d+)$")
 PATTERN_ONION = re.compile(r"^([abcdefghijklmnopqrstuvwxyz234567]{16}\.onion):(\d+)$")
-PATTERN_AGENT = re.compile(r"^(/vrqCore:2.2.(0|1|99)/)$")
+PATTERN_AGENT = re.compile(r"^(/vrcCore:2.2.(0|1|99)/)$")
 
 def parseline(line):
     sline = line.split()
@@ -43,14 +43,14 @@ def parseline(line):
                 return None
             else:
                 net = 'onion'
-                vrqtr = sortkey = m.group(1)
+                vrctr = sortkey = m.group(1)
                 port = int(m.group(2))
         else:
             net = 'ipv6'
             if m.group(1) in ['::']: # Not interested in localhost
                 return None
-            vrqtr = m.group(1)
-            sortkey = vrqtr # XXX parse IPv6 into number, could use name_to_ipv6 from generate-seeds
+            vrctr = m.group(1)
+            sortkey = vrctr # XXX parse IPv6 into number, could use name_to_ipv6 from generate-seeds
             port = int(m.group(2))
     else:
         # Do IPv4 sanity check
@@ -63,7 +63,7 @@ def parseline(line):
             return None
         net = 'ipv4'
         sortkey = ip
-        vrqtr = m.group(1)
+        vrctr = m.group(1)
         port = int(m.group(6))
     # Skip bad results.
     if sline[1] == 0:
@@ -86,7 +86,7 @@ def parseline(line):
     # Construct result.
     return {
         'net': net,
-        'ip': vrqtr,
+        'ip': vrctr,
         'port': port,
         'ipnum': ip,
         'uptime': uptime30,
@@ -98,24 +98,24 @@ def parseline(line):
         'sortkey': sortkey,
     }
 
-def filtermultiport(vrq):
+def filtermultiport(vrc):
     '''Filter out hosts with more nodes per IP'''
     hist = collections.defaultdict(list)
-    for ip in vrq:
+    for ip in vrc:
         hist[ip['sortkey']].append(ip)
     return [value[0] for (key,value) in list(hist.items()) if len(value)==1]
 
 # Based on Greg Maxwell's seed_filter.py
-def filterbyasn(vrq, max_per_asn, max_total):
-    # Sift out vrq by type
-    vrq_ipv4 = [ip for ip in vrq if ip['net'] == 'ipv4']
-    vrq_ipv6 = [ip for ip in vrq if ip['net'] == 'ipv6']
-    vrq_onion = [ip for ip in vrq if ip['net'] == 'onion']
+def filterbyasn(vrc, max_per_asn, max_total):
+    # Sift out vrc by type
+    vrc_ipv4 = [ip for ip in vrc if ip['net'] == 'ipv4']
+    vrc_ipv6 = [ip for ip in vrc if ip['net'] == 'ipv6']
+    vrc_onion = [ip for ip in vrc if ip['net'] == 'onion']
 
     # Filter IPv4 by ASN
     result = []
     asn_count = {}
-    for ip in vrq_ipv4:
+    for ip in vrc_ipv4:
         if len(result) == max_total:
             break
         try:
@@ -132,36 +132,36 @@ def filterbyasn(vrq, max_per_asn, max_total):
     # TODO: filter IPv6 by ASN
 
     # Add back non-IPv4
-    result.extend(vrq_ipv6)
-    result.extend(vrq_onion)
+    result.extend(vrc_ipv6)
+    result.extend(vrc_onion)
     return result
 
 def main():
     lines = sys.stdin.readlines()
-    vrq = [parseline(line) for line in lines]
+    vrc = [parseline(line) for line in lines]
 
     # Skip entries with valid address.
-    vrq = [ip for ip in vrq if ip is not None]
+    vrc = [ip for ip in vrc if ip is not None]
     # Skip entries from suspicious hosts.
-    vrq = [ip for ip in vrq if ip['ip'] not in SUSPICIOUS_HOSTS]
+    vrc = [ip for ip in vrc if ip['ip'] not in SUSPICIOUS_HOSTS]
     # Enforce minimal number of blocks.
-    vrq = [ip for ip in vrq if ip['blocks'] >= MIN_BLOCKS]
+    vrc = [ip for ip in vrc if ip['blocks'] >= MIN_BLOCKS]
     # Require service bit 1.
-    vrq = [ip for ip in vrq if (ip['service'] & 1) == 1]
+    vrc = [ip for ip in vrc if (ip['service'] & 1) == 1]
     # Require at least 50% 30-day uptime.
-    vrq = [ip for ip in vrq if ip['uptime'] > 50]
+    vrc = [ip for ip in vrc if ip['uptime'] > 50]
     # Require a known and recent user agent.
-    vrq = [ip for ip in vrq if PATTERN_AGENT.match(re.sub(' ', '-', ip['agent']))]
+    vrc = [ip for ip in vrc if PATTERN_AGENT.match(re.sub(' ', '-', ip['agent']))]
     # Sort by availability (and use last success as tie breaker)
-    vrq.sort(key=lambda x: (x['uptime'], x['lastsuccess'], x['ip']), reverse=True)
+    vrc.sort(key=lambda x: (x['uptime'], x['lastsuccess'], x['ip']), reverse=True)
     # Filter out hosts with multiple bitcoin ports, these are likely abusive
-    vrq = filtermultiport(vrq)
+    vrc = filtermultiport(vrc)
     # Look up ASNs and limit results, both per ASN and globally.
-    vrq = filterbyasn(vrq, MAX_SEEDS_PER_ASN, NSEEDS)
+    vrc = filterbyasn(vrc, MAX_SEEDS_PER_ASN, NSEEDS)
     # Sort the results by IP address (for deterministic output).
-    vrq.sort(key=lambda x: (x['net'], x['sortkey']))
+    vrc.sort(key=lambda x: (x['net'], x['sortkey']))
 
-    for ip in vrq:
+    for ip in vrc:
         if ip['net'] == 'ipv6':
             print('[%s]:%i' % (ip['ip'], ip['port']))
         else:

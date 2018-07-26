@@ -1,0 +1,26 @@
+[Unit]
+Description=vrc's distributed currency daemon
+After=network.target
+
+[Service]
+User=vrc
+Group=vrc
+
+Type=forking
+PIDFile=/var/lib/vrcd/vrcd.pid
+
+ExecStart=/usr/bin/vrcd -daemon -pid=/var/lib/vrcd/vrcd.pid \
+          -conf=/etc/vrc/vrc.conf -datadir=/var/lib/vrcd
+
+ExecStop=-/usr/bin/vrc-cli -conf=/etc/vrc/vrc.conf \
+         -datadir=/var/lib/vrcd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

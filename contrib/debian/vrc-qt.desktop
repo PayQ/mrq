@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=vrc
+Comment=vrc P2P Cryptocurrency
+Comment[fr]=vrc, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=vrc, eşten eşe kriptografik sanal para birimi
+Exec=vrc-qt %u
+Terminal=false
+Type=Application
+Icon=vrc128
+MimeType=x-scheme-handler/vrc;
+Categories=Office;Finance;

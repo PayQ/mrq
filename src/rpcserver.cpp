@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018 vrq Developers
+// Copyright (c) 2018 vrc Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -220,10 +220,10 @@ Value stop(const Array& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop vrq server.");
+            "\nStop vrc server.");
     // Shutdown will take long enough that the response should get back
     StartShutdown();
-    return "vrq server stopping";
+    return "vrc server stopping";
 }
 
 
@@ -300,36 +300,36 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "reconsiderblock", &reconsiderblock, true, true, false},
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
-        /* vrq features */
-        {"vrq", "masternode", &masternode, true, true, false},
-        {"vrq", "listmasternodes", &listmasternodes, true, true, false},
-        {"vrq", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"vrq", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"vrq", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"vrq", "masternodedebug", &masternodedebug, true, true, false},
-        {"vrq", "startmasternode", &startmasternode, true, true, false},
-        {"vrq", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"vrq", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"vrq", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"vrq", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"vrq", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"vrq", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"vrq", "mnbudget", &mnbudget, true, true, false},
-        {"vrq", "preparebudget", &preparebudget, true, true, false},
-        {"vrq", "submitbudget", &submitbudget, true, true, false},
-        {"vrq", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"vrq", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"vrq", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"vrq", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"vrq", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"vrq", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"vrq", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"vrq", "checkbudgets", &checkbudgets, true, true, false},
-        {"vrq", "mnsync", &mnsync, true, true, false},
-        {"vrq", "spork", &spork, true, true, false},
-        {"vrq", "getpoolinfo", &getpoolinfo, true, true, false},
+        /* vrc features */
+        {"vrc", "masternode", &masternode, true, true, false},
+        {"vrc", "listmasternodes", &listmasternodes, true, true, false},
+        {"vrc", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"vrc", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"vrc", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"vrc", "masternodedebug", &masternodedebug, true, true, false},
+        {"vrc", "startmasternode", &startmasternode, true, true, false},
+        {"vrc", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"vrc", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"vrc", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"vrc", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"vrc", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"vrc", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"vrc", "mnbudget", &mnbudget, true, true, false},
+        {"vrc", "preparebudget", &preparebudget, true, true, false},
+        {"vrc", "submitbudget", &submitbudget, true, true, false},
+        {"vrc", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"vrc", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"vrc", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"vrc", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"vrc", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"vrc", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"vrc", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"vrc", "checkbudgets", &checkbudgets, true, true, false},
+        {"vrc", "mnsync", &mnsync, true, true, false},
+        {"vrc", "spork", &spork, true, true, false},
+        {"vrc", "getpoolinfo", &getpoolinfo, true, true, false},
 #ifdef ENABLE_WALLET
-        {"vrq", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
+        {"vrc", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
 
         /* Wallet */
         {"wallet", "addmultisigaddress", &addmultisigaddress, true, false, true},
@@ -594,16 +594,16 @@ void StartRPCThreads()
         unsigned char rand_pwd[32];
         GetRandBytes(rand_pwd, 32);
         uiInterface.ThreadSafeMessageBox(strprintf(
-                                             _("To use vrqd, or the -server option to vrq-qt, you must set an rpcpassword in the configuration file:\n"
+                                             _("To use vrcd, or the -server option to vrc-qt, you must set an rpcpassword in the configuration file:\n"
                                                "%s\n"
                                                "It is recommended you use the following random password:\n"
-                                               "rpcuser=vrqrpc\n"
+                                               "rpcuser=vrcrpc\n"
                                                "rpcpassword=%s\n"
                                                "(you do not need to remember this password)\n"
                                                "The username and password MUST NOT be the same.\n"
                                                "If the file does not exist, create it with owner-readable-only file permissions.\n"
                                                "It is also recommended to set alertnotify so you are notified of problems;\n"
-                                               "for example: alertnotify=echo %%s | mail -s \"vrq Alert\" admin@foo.com\n"),
+                                               "for example: alertnotify=echo %%s | mail -s \"vrc Alert\" admin@foo.com\n"),
                                              GetConfigFile().string(),
                                              EncodeBase58(&rand_pwd[0], &rand_pwd[0] + 32)),
             "", CClientUIInterface::MSG_ERROR | CClientUIInterface::SECURE);
@@ -1054,7 +1054,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> vrq-cli " + methodname + " " + args + "\n";
+    return "> vrc-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)

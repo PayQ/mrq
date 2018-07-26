@@ -31,7 +31,7 @@ commitFiles=true
 read -d '' usage <<- EOF
 Usage: $scriptName [-c|u|v|b|s|B|o|h|j|m|] signer version
 
-Run this script from the directory containing the vrq, gitian-builder, gitian.sigs, and vrq-detached-sigs.
+Run this script from the directory containing the vrc, gitian-builder, gitian.sigs, and vrc-detached-sigs.
 
 Arguments:
 signer          GPG signer to sign each build assert file
@@ -232,7 +232,7 @@ echo ${COMMIT}
 if [[ $setup = true ]]
 then
     sudo apt-get install ruby apache2 git apt-cacher-ng python-vm-builder qemu-kvm qemu-utils
-    git clone https://github.com/vrqcoin/gitian.sigs.git
+    git clone https://github.com/vrccoin/gitian.sigs.git
     git clone https://github.com/PayQ/vrc-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
     pushd ./gitian-builder
@@ -247,7 +247,7 @@ then
 fi
 
 # Set up build
-pushd ./vrq
+pushd ./vrc
 git fetch
 git checkout ${COMMIT}
 popd
@@ -256,7 +256,7 @@ popd
 if [[ $build = true ]]
 then
 	# Make output folder
-	mkdir -p ./vrq-binaries/${VERSION}
+	mkdir -p ./vrc-binaries/${VERSION}
 
 	# Build Dependencies
 	echo ""
@@ -266,7 +266,7 @@ then
 	mkdir -p inputs
 	wget -N -P inputs $osslPatchUrl
 	wget -N -P inputs $osslTarUrl
-	make -C ../vrq/depends download SOURCES_PATH=`pwd`/cache/common
+	make -C ../vrc/depends download SOURCES_PATH=`pwd`/cache/common
 
 	# Linux
 	if [[ $linux = true ]]
@@ -274,9 +274,9 @@ then
             echo ""
 	    echo "Compiling ${VERSION} Linux"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit vrq=${COMMIT} --url vrq=${url} ../vrq/contrib/gitian-descriptors/gitian-linux.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../vrq/contrib/gitian-descriptors/gitian-linux.yml
-	    mv build/out/vrq-*.tar.gz build/out/src/vrq-*.tar.gz ../vrq-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit vrc=${COMMIT} --url vrc=${url} ../vrc/contrib/gitian-descriptors/gitian-linux.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../vrc/contrib/gitian-descriptors/gitian-linux.yml
+	    mv build/out/vrc-*.tar.gz build/out/src/vrc-*.tar.gz ../vrc-binaries/${VERSION}
 	fi
 	# Windows
 	if [[ $windows = true ]]
@@ -284,10 +284,10 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} Windows"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit vrq=${COMMIT} --url vrq=${url} ../vrq/contrib/gitian-descriptors/gitian-win.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../vrq/contrib/gitian-descriptors/gitian-win.yml
-	    mv build/out/vrq-*-win-unsigned.tar.gz inputs/vrq-win-unsigned.tar.gz
-	    mv build/out/vrq-*.zip build/out/vrq-*.exe ../vrq-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit vrc=${COMMIT} --url vrc=${url} ../vrc/contrib/gitian-descriptors/gitian-win.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../vrc/contrib/gitian-descriptors/gitian-win.yml
+	    mv build/out/vrc-*-win-unsigned.tar.gz inputs/vrc-win-unsigned.tar.gz
+	    mv build/out/vrc-*.zip build/out/vrc-*.exe ../vrc-binaries/${VERSION}
 	fi
 	# Mac OSX
 	if [[ $osx = true ]]
@@ -295,10 +295,10 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} Mac OSX"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit vrq=${COMMIT} --url vrq=${url} ../vrq/contrib/gitian-descriptors/gitian-osx.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../vrq/contrib/gitian-descriptors/gitian-osx.yml
-	    mv build/out/vrq-*-osx-unsigned.tar.gz inputs/vrq-osx-unsigned.tar.gz
-	    mv build/out/vrq-*.tar.gz build/out/vrq-*.dmg ../vrq-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit vrc=${COMMIT} --url vrc=${url} ../vrc/contrib/gitian-descriptors/gitian-osx.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../vrc/contrib/gitian-descriptors/gitian-osx.yml
+	    mv build/out/vrc-*-osx-unsigned.tar.gz inputs/vrc-osx-unsigned.tar.gz
+	    mv build/out/vrc-*.tar.gz build/out/vrc-*.dmg ../vrc-binaries/${VERSION}
 	fi
 	popd
 
@@ -325,27 +325,27 @@ then
 	echo ""
 	echo "Verifying v${VERSION} Linux"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../vrq/contrib/gitian-descriptors/gitian-linux.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../vrc/contrib/gitian-descriptors/gitian-linux.yml
 	# Windows
 	echo ""
 	echo "Verifying v${VERSION} Windows"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../vrq/contrib/gitian-descriptors/gitian-win.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../vrc/contrib/gitian-descriptors/gitian-win.yml
 	# Mac OSX
 	echo ""
 	echo "Verifying v${VERSION} Mac OSX"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../vrq/contrib/gitian-descriptors/gitian-osx.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../vrc/contrib/gitian-descriptors/gitian-osx.yml
 	# Signed Windows
 	echo ""
 	echo "Verifying v${VERSION} Signed Windows"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../vrq/contrib/gitian-descriptors/gitian-osx-signer.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../vrc/contrib/gitian-descriptors/gitian-osx-signer.yml
 	# Signed Mac OSX
 	echo ""
 	echo "Verifying v${VERSION} Signed Mac OSX"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../vrq/contrib/gitian-descriptors/gitian-osx-signer.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../vrc/contrib/gitian-descriptors/gitian-osx-signer.yml
 	popd
 fi
 
@@ -360,10 +360,10 @@ then
 	    echo ""
 	    echo "Signing ${VERSION} Windows"
 	    echo ""
-	    ./bin/gbuild -i --commit signature=${COMMIT} ../vrq/contrib/gitian-descriptors/gitian-win-signer.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../vrq/contrib/gitian-descriptors/gitian-win-signer.yml
-	    mv build/out/vrq-*win64-setup.exe ../vrq-binaries/${VERSION}
-	    mv build/out/vrq-*win32-setup.exe ../vrq-binaries/${VERSION}
+	    ./bin/gbuild -i --commit signature=${COMMIT} ../vrc/contrib/gitian-descriptors/gitian-win-signer.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../vrc/contrib/gitian-descriptors/gitian-win-signer.yml
+	    mv build/out/vrc-*win64-setup.exe ../vrc-binaries/${VERSION}
+	    mv build/out/vrc-*win32-setup.exe ../vrc-binaries/${VERSION}
 	fi
 	# Sign Mac OSX
 	if [[ $osx = true ]]
@@ -371,9 +371,9 @@ then
 	    echo ""
 	    echo "Signing ${VERSION} Mac OSX"
 	    echo ""
-	    ./bin/gbuild -i --commit signature=${COMMIT} ../vrq/contrib/gitian-descriptors/gitian-osx-signer.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../vrq/contrib/gitian-descriptors/gitian-osx-signer.yml
-	    mv build/out/vrq-osx-signed.dmg ../vrq-binaries/${VERSION}/vrq-${VERSION}-osx.dmg
+	    ./bin/gbuild -i --commit signature=${COMMIT} ../vrc/contrib/gitian-descriptors/gitian-osx-signer.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../vrc/contrib/gitian-descriptors/gitian-osx-signer.yml
+	    mv build/out/vrc-osx-signed.dmg ../vrc-binaries/${VERSION}/vrc-${VERSION}-osx.dmg
 	fi
 	popd
 

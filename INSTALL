@@ -1,4 +1,4 @@
-Building vrq
+Building vrc
 
 Use the autogen script to prepare the build environment.
 
@@ -8,6 +8,6 @@ Use the autogen script to prepare the build environment.
 
 Always verify the signatures and checksums.
 
-See doc/build-*.md for instructions on building vrqd,
+See doc/build-*.md for instructions on building vrcd,
 the intended-for-services, no-graphical-interface, reference
-implementation of vrq.
+implementation of vrc.

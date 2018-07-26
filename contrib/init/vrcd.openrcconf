@@ -1,0 +1,26 @@
+# /etc/conf.d/vrcd: config file for /etc/init.d/vrcd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/vrc/vrc.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/vrcd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/vrcd.pid"
+
+# Where to write vrcd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/vrcd"
+
+# User and group to own vrcd process
+#BITCOIND_USER="vrc"
+#BITCOIND_GROUP="vrc"
+
+# Path to vrcd executable
+#BITCOIND_BIN="/usr/bin/vrcd"
+
+# Nice value to run vrcd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

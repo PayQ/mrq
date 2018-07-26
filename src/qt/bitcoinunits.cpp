@@ -1,7 +1,7 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018 vrq Developers
+// Copyright (c) 2018 vrc Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -20,18 +20,18 @@ BitcoinUnits::BitcoinUnits(QObject* parent) : QAbstractListModel(parent),
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(vrq);
-    unitlist.append(mvrq);
-    unitlist.append(uvrq);
+    unitlist.append(vrc);
+    unitlist.append(mvrc);
+    unitlist.append(uvrc);
     return unitlist;
 }
 
 bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
-    case vrq:
-    case mvrq:
-    case uvrq:
+    case vrc:
+    case mvrc:
+    case uvrc:
         return true;
     default:
         return false;
@@ -41,12 +41,12 @@ bool BitcoinUnits::valid(int unit)
 QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
-    case vrq:
-        return QString("vrq");
-    case mvrq:
-        return QString("mvrq");
-    case uvrq:
-        return QString::fromUtf8("uvrq");
+    case vrc:
+        return QString("vrc");
+    case mvrc:
+        return QString("mvrc");
+    case uvrc:
+        return QString::fromUtf8("uvrc");
     default:
         return QString("???");
     }
@@ -56,23 +56,23 @@ QString BitcoinUnits::name(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case vrq:
-            return QString("vrq");
-        case mvrq:
-            return QString("mvrq");
-        case uvrq:
-            return QString::fromUtf8("μvrq");
+        case vrc:
+            return QString("vrc");
+        case mvrc:
+            return QString("mvrc");
+        case uvrc:
+            return QString::fromUtf8("μvrc");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case vrq:
-            return QString("tvrq");
-        case mvrq:
-            return QString("mtvrq");
-        case uvrq:
-            return QString::fromUtf8("μtvrq");
+        case vrc:
+            return QString("tvrc");
+        case mvrc:
+            return QString("mtvrc");
+        case uvrc:
+            return QString::fromUtf8("μtvrc");
         default:
             return QString("???");
         }
@@ -83,23 +83,23 @@ QString BitcoinUnits::description(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case vrq:
-            return QString("vrq");
-        case mvrq:
-            return QString("Milli-vrq (1 / 1" THIN_SP_UTF8 "000)");
-        case uvrq:
-            return QString("Micro-vrq (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case vrc:
+            return QString("vrc");
+        case mvrc:
+            return QString("Milli-vrc (1 / 1" THIN_SP_UTF8 "000)");
+        case uvrc:
+            return QString("Micro-vrc (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case vrq:
-            return QString("Testvrqs");
-        case mvrq:
-            return QString("Milli-Testvrq (1 / 1" THIN_SP_UTF8 "000)");
-        case uvrq:
-            return QString("Micro-Testvrq (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case vrc:
+            return QString("Testvrcs");
+        case mvrc:
+            return QString("Milli-Testvrc (1 / 1" THIN_SP_UTF8 "000)");
+        case uvrc:
+            return QString("Micro-Testvrc (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
@@ -109,11 +109,11 @@ QString BitcoinUnits::description(int unit)
 qint64 BitcoinUnits::factor(int unit)
 {
     switch (unit) {
-    case vrq:
+    case vrc:
         return 100000000;
-    case mvrq:
+    case mvrc:
         return 100000;
-    case uvrq:
+    case uvrc:
         return 100;
     default:
         return 100000000;
@@ -123,11 +123,11 @@ qint64 BitcoinUnits::factor(int unit)
 int BitcoinUnits::decimals(int unit)
 {
     switch (unit) {
-    case vrq:
+    case vrc:
         return 8;
-    case mvrq:
+    case mvrc:
         return 5;
-    case uvrq:
+    case uvrc:
         return 2;
     default:
         return 0;
