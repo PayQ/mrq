@@ -58,12 +58,12 @@
         <translation>Mottagar adresser</translation>
     </message>
     <message>
-        <source>These are your MRQ addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Det här är dina MRQ adresser för att sända betalningar. Kontrollera alltid summan och mottagaradressen före du sänder mynt.</translation>
+        <source>These are your vrq addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Det här är dina vrq adresser för att sända betalningar. Kontrollera alltid summan och mottagaradressen före du sänder mynt.</translation>
     </message>
     <message>
-        <source>These are your MRQ addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Det här är dina MRQ adresser för att ta emot betalningar. Det är rekomenderat att använda en ny mottagaradress för varje transaktion.</translation>
+        <source>These are your vrq addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Det här är dina vrq adresser för att ta emot betalningar. Det är rekomenderat att använda en ny mottagaradress för varje transaktion.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -160,16 +160,16 @@
         <translation>Bekräfta plånboks krypering</translation>
     </message>
     <message>
-        <source>MRQ will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Mrqs from being stolen by malware infecting your computer.</source>
-        <translation>MRQ kommer att stängas ner nu för att färdigställa kryperingsprocessen. Kom ihåg att kryptering av din plånbok inte kan säkerställa dina Mrqs från att bli stulna av skadeprogram som infekterat din dator.</translation>
+        <source>vrq will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your vrqs from being stolen by malware infecting your computer.</source>
+        <translation>vrq kommer att stängas ner nu för att färdigställa kryperingsprocessen. Kom ihåg att kryptering av din plånbok inte kan säkerställa dina vrqs från att bli stulna av skadeprogram som infekterat din dator.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Är du säker på att du vill kryptera din plånbok?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR Mrq&lt;/b&gt;!</source>
-        <translation>Varning: om du krypterar din plånbok och tappar bort din lösenfras kommer du &lt;b&gt; FÖRLORA ALLA DINA Mrq&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR vrq&lt;/b&gt;!</source>
+        <translation>Varning: om du krypterar din plånbok och tappar bort din lösenfras kommer du &lt;b&gt; FÖRLORA ALLA DINA vrq&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -223,8 +223,8 @@
         <translation>BIP 38 Kryptering</translation>
     </message>
     <message>
-        <source>Enter a Mrq Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Skriv in en Mrq adress som du vill kryptera med BIP 38.
+        <source>Enter a vrq Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Skriv in en vrq adress som du vill kryptera med BIP 38.
 Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den krypterade privata nyckeln.</translation>
     </message>
     <message>
@@ -232,8 +232,8 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>Adress:</translation>
     </message>
     <message>
-        <source>The MRQ address to sign the message with</source>
-        <translation>MRQ adressen för signera meddelandet med</translation>
+        <source>The vrq address to sign the message with</source>
+        <translation>vrq adressen för signera meddelandet med</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -264,8 +264,8 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>Kopiera den nuvarande signaturen till systemets urklipp</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this MRQ address</source>
-        <translation>Signera meddelandet för att bevisa att du äger denna MRQ adress</translation>
+        <source>Sign the message to prove you own this vrq address</source>
+        <translation>Signera meddelandet för att bevisa att du äger denna vrq adress</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -288,12 +288,12 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>Ange</translation>
     </message>
     <message>
-        <source>The MRQ address the message was signed with</source>
-        <translation>MRQ adressen meddelandet blev signerat med</translation>
+        <source>The vrq address the message was signed with</source>
+        <translation>vrq adressen meddelandet blev signerat med</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified MRQ address</source>
-        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika MRQ adressen.</translation>
+        <source>Verify the message to ensure it was signed with the specified vrq address</source>
+        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika vrq adressen.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -583,16 +583,16 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>flik vertygsrad</translation>
     </message>
     <message>
-        <source>Mrq</source>
-        <translation>MRQ Kärna</translation>
+        <source>vrq</source>
+        <translation>vrq Kärna</translation>
     </message>
     <message>
-        <source>Send coins to a MRQ address</source>
-        <translation>Skicka mynt till en MRQ adress</translation>
+        <source>Send coins to a vrq address</source>
+        <translation>Skicka mynt till en vrq adress</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and mrq: URIs)</source>
-        <translation>Begär betalning (genererar QR kod och mrq: URls)</translation>
+        <source>Request payments (generates QR codes and vrq: URIs)</source>
+        <translation>Begär betalning (genererar QR kod och vrq: URls)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -603,24 +603,24 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>Utforska masternoder</translation>
     </message>
     <message>
-        <source>&amp;About Mrq</source>
-        <translation>Om MRQ Kärnan</translation>
+        <source>&amp;About vrq</source>
+        <translation>Om vrq Kärnan</translation>
     </message>
     <message>
-        <source>Show information about Mrq</source>
-        <translation>Visa information om MRQ Kärnan</translation>
+        <source>Show information about vrq</source>
+        <translation>Visa information om vrq Kärnan</translation>
     </message>
     <message>
-        <source>Modify configuration options for MRQ</source>
-        <translation>Ändra konfigurationsval för MRQ</translation>
+        <source>Modify configuration options for vrq</source>
+        <translation>Ändra konfigurationsval för vrq</translation>
     </message>
     <message>
-        <source>Sign messages with your MRQ addresses to prove you own them</source>
-        <translation>Signera meddelanden med din MRQ adress för att visa att du äger dem</translation>
+        <source>Sign messages with your vrq addresses to prove you own them</source>
+        <translation>Signera meddelanden med din vrq adress för att visa att du äger dem</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified MRQ addresses</source>
-        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika MRQ adressen.</translation>
+        <source>Verify messages to ensure they were signed with specified vrq addresses</source>
+        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika vrq adressen.</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -631,8 +631,8 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>Kryptera och avkryptera privata nycklar genom användning av lösenfras</translation>
     </message>
     <message>
-        <source>Mrq client</source>
-        <translation>MRQ kärn klient</translation>
+        <source>vrq client</source>
+        <translation>vrq kärn klient</translation>
     </message>
     <message>
         <source>%1 and %2</source>
@@ -841,15 +841,15 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Mrq</source>
-        <translation>MRQ Kärna</translation>
+        <source>vrq</source>
+        <translation>vrq Kärna</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>Mrq</source>
-        <translation>MRQ Kärna</translation>
+        <source>vrq</source>
+        <translation>vrq Kärna</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1106,8 +1106,8 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The MRQ address to sign the message with</source>
-        <translation>MRQ adressen för signera meddelandet med</translation>
+        <source>The vrq address to sign the message with</source>
+        <translation>vrq adressen för signera meddelandet med</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1130,16 +1130,16 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
         <translation>Kopiera den nuvarande signaturen till systemets urklipp</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this MRQ address</source>
-        <translation>Signera meddelandet för att bevisa att du äger denna MRQ adress</translation>
+        <source>Sign the message to prove you own this vrq address</source>
+        <translation>Signera meddelandet för att bevisa att du äger denna vrq adress</translation>
     </message>
     <message>
-        <source>The MRQ address the message was signed with</source>
-        <translation>MRQ adressen meddelandet blev signerat med</translation>
+        <source>The vrq address the message was signed with</source>
+        <translation>vrq adressen meddelandet blev signerat med</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified MRQ address</source>
-        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika MRQ adressen.</translation>
+        <source>Verify the message to ensure it was signed with the specified vrq address</source>
+        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika vrq adressen.</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1181,8 +1181,8 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Mrq</source>
-        <translation>MRQ Kärna</translation>
+        <source>vrq</source>
+        <translation>vrq Kärna</translation>
     </message>
     </context>
 <context>
@@ -1365,7 +1365,7 @@ Skriv in en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna d
     </message>
     </context>
 <context>
-    <name>mrq-core</name>
+    <name>vrq-core</name>
     <message>
         <source>Error</source>
         <translation>Fel</translation>

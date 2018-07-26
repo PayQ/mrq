@@ -1,8 +1,8 @@
-/* src/config/mrq-config.h.in.  Generated from configure.ac by autoheader.  */
+/* src/config/vrq-config.h.in.  Generated from configure.ac by autoheader.  */
 
-#ifndef Mrq_CONFIG_H
+#ifndef vrq_CONFIG_H
 
-#define Mrq_CONFIG_H
+#define vrq_CONFIG_H
 
 /* Define if building universal (internal helper macro) */
 #undef AC_APPLE_UNIVERSAL_BUILD
@@ -339,4 +339,4 @@
 /* Define for large files, on AIX-style hosts. */
 #undef _LARGE_FILES
 
-#endif //Mrq_CONFIG_H
+#endif //vrq_CONFIG_H

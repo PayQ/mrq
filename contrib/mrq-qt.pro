@@ -78,7 +78,7 @@ HEADERS += src/activemasternode.h \
            src/crypter.h \
            src/obfuscation-relay.h \
            src/obfuscation.h \
-           src/mrq-config.h \
+           src/vrq-config.h \
            src/db.h \
            src/eccryptoverify.h \
            src/ecwrapper.h \
@@ -131,7 +131,7 @@ HEADERS += src/activemasternode.h \
            src/wallet_ismine.h \
            src/walletdb.h \
            src/compat/sanity.h \
-           src/config/mrq-config.h \
+           src/config/vrq-config.h \
            src/crypto/common.h \
            src/crypto/hmac_sha256.h \
            src/crypto/hmac_sha512.h \
@@ -333,7 +333,7 @@ HEADERS += src/activemasternode.h \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.h \
            src/crypto/aes_helper.c \
            src/qt/bitcoinamountfield.moc \
-           src/qt/mrq.moc \
+           src/qt/vrq.moc \
            src/qt/intro.moc \
            src/qt/overviewpage.moc \
            src/qt/rpcconsole.moc \
@@ -374,9 +374,9 @@ SOURCES += src/activemasternode.cpp \
            src/crypter.cpp \
            src/obfuscation-relay.cpp \
            src/obfuscation.cpp \
-           src/mrq-cli.cpp \
-           src/mrq-tx.cpp \
-           src/mrq.cpp \
+           src/vrq-cli.cpp \
+           src/vrq-tx.cpp \
+           src/vrq.cpp \
            src/db.cpp \
            src/eccryptoverify.cpp \
            src/ecwrapper.cpp \
@@ -471,8 +471,8 @@ SOURCES += src/activemasternode.cpp \
            src/qt/coincontroltreewidget.cpp \
            src/qt/csvmodelwriter.cpp \
            src/qt/obfuscationconfig.cpp \
-           src/qt/mrq.cpp \
-           src/qt/mrqstrings.cpp \
+           src/qt/vrq.cpp \
+           src/qt/vrqstrings.cpp \
            src/qt/editaddressdialog.cpp \
            src/qt/guiutil.cpp \
            src/qt/intro.cpp \
@@ -550,7 +550,7 @@ SOURCES += src/activemasternode.cpp \
            src/test/sighash_tests.cpp \
            src/test/sigopcount_tests.cpp \
            src/test/skiplist_tests.cpp \
-           src/test/test_mrq.cpp \
+           src/test/test_vrq.cpp \
            src/test/timedata_tests.cpp \
            src/test/transaction_tests.cpp \
            src/test/uint256_tests.cpp \
@@ -641,21 +641,21 @@ SOURCES += src/activemasternode.cpp \
            src/leveldb/helpers/memenv/memenv.cc \
            src/leveldb/helpers/memenv/memenv_test.cc \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.c
-RESOURCES += src/qt/mrq.qrc src/qt/mrq_locale.qrc
+RESOURCES += src/qt/vrq.qrc src/qt/vrq_locale.qrc
 
-TRANSLATIONS += src/qt/locale/mrq_bg.ts \
-                src/qt/locale/mrq_de.ts \
-                src/qt/locale/mrq_en.ts \
-                src/qt/locale/mrq_es.ts \
-                src/qt/locale/mrq_fi.ts \
-                src/qt/locale/mrq_fr.ts \
-                src/qt/locale/mrq_it.ts \
-                src/qt/locale/mrq_ja.ts \
-                src/qt/locale/mrq_pl.ts \
-                src/qt/locale/mrq_pt.ts \
-                src/qt/locale/mrq_ru.ts \
-                src/qt/locale/mrq_sk.ts \
-                src/qt/locale/mrq_sv.ts \
-                src/qt/locale/mrq_vi.ts \
-                src/qt/locale/mrq_zh_CN.ts \
-                src/qt/locale/mrq_zh_TW.ts
+TRANSLATIONS += src/qt/locale/vrq_bg.ts \
+                src/qt/locale/vrq_de.ts \
+                src/qt/locale/vrq_en.ts \
+                src/qt/locale/vrq_es.ts \
+                src/qt/locale/vrq_fi.ts \
+                src/qt/locale/vrq_fr.ts \
+                src/qt/locale/vrq_it.ts \
+                src/qt/locale/vrq_ja.ts \
+                src/qt/locale/vrq_pl.ts \
+                src/qt/locale/vrq_pt.ts \
+                src/qt/locale/vrq_ru.ts \
+                src/qt/locale/vrq_sk.ts \
+                src/qt/locale/vrq_sv.ts \
+                src/qt/locale/vrq_vi.ts \
+                src/qt/locale/vrq_zh_CN.ts \
+                src/qt/locale/vrq_zh_TW.ts

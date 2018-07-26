@@ -1,25 +1,25 @@
-# /etc/conf.d/mrqd: config file for /etc/init.d/mrqd
+# /etc/conf.d/vrqd: config file for /etc/init.d/vrqd
 
 # Config file location
-#BITCOIND_CONFIGFILE="/etc/mrq/mrq.conf"
+#BITCOIND_CONFIGFILE="/etc/vrq/vrq.conf"
 
 # What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
-#BITCOIND_PIDDIR="/var/run/mrqd"
+#BITCOIND_PIDDIR="/var/run/vrqd"
 
 # What filename to give the pidfile
-#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/mrqd.pid"
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/vrqd.pid"
 
-# Where to write mrqd data (be mindful that the blockchain is large)
-#BITCOIND_DATADIR="/var/lib/mrqd"
+# Where to write vrqd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/vrqd"
 
-# User and group to own mrqd process
-#BITCOIND_USER="mrq"
-#BITCOIND_GROUP="mrq"
+# User and group to own vrqd process
+#BITCOIND_USER="vrq"
+#BITCOIND_GROUP="vrq"
 
-# Path to mrqd executable
-#BITCOIND_BIN="/usr/bin/mrqd"
+# Path to vrqd executable
+#BITCOIND_BIN="/usr/bin/vrqd"
 
-# Nice value to run mrqd under
+# Nice value to run vrqd under
 #BITCOIND_NICE=0
 
 # Additional options (avoid -conf and -datadir, use flags above)

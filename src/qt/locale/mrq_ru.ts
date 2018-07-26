@@ -62,12 +62,12 @@
         <translation>Адреса получения</translation>
     </message>
     <message>
-        <source>These are your Mrq addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Это ваши Mrq-адреса для отправки платежей. Перед отправкой монет всегда проверяйте сумму и адрес получателя.</translation>
+        <source>These are your vrq addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Это ваши vrq-адреса для отправки платежей. Перед отправкой монет всегда проверяйте сумму и адрес получателя.</translation>
     </message>
     <message>
-        <source>These are your Mrq addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Это ваши Mrq-адреса для получения платежей. Для каждой транзакции рекомендуется использовать новый адрес получения.</translation>
+        <source>These are your vrq addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Это ваши vrq-адреса для получения платежей. Для каждой транзакции рекомендуется использовать новый адрес получения.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,16 +172,16 @@
         <translation>Подтверждение шифрования кошелька</translation>
     </message>
     <message>
-        <source>Mrq will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Mrqs from being stolen by malware infecting your computer.</source>
-        <translation>Mrq сейчас закроется, чтобы завершить процесс шифрования. Помните, что шифрование вашего кошелька не может полностью защитить ваши Mrq от кражи с использованием вредоносного ПО.</translation>
+        <source>vrq will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your vrqs from being stolen by malware infecting your computer.</source>
+        <translation>vrq сейчас закроется, чтобы завершить процесс шифрования. Помните, что шифрование вашего кошелька не может полностью защитить ваши vrq от кражи с использованием вредоносного ПО.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Вы действительно хотите зашифровать свой кошелек?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR Mrq&lt;/b&gt;!</source>
-        <translation>Внимание: если вы зашифруете свой кошелёк и потеряете от него пароль, то вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ СВОИ Mrq&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR vrq&lt;/b&gt;!</source>
+        <translation>Внимание: если вы зашифруете свой кошелёк и потеряете от него пароль, то вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ СВОИ vrq&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -235,16 +235,16 @@
         <translation>&amp;BIP 38 Шифрование</translation>
     </message>
     <message>
-        <source>Enter a Mrq Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Введите Mrq адрес, которым вы хотите зашифровать, используя BIP 38. Введите пароль в среднем поле. Нажмите "Зашифровать", чтобы создать зашиврованный секретный ключ.</translation>
+        <source>Enter a vrq Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Введите vrq адрес, которым вы хотите зашифровать, используя BIP 38. Введите пароль в среднем поле. Нажмите "Зашифровать", чтобы создать зашиврованный секретный ключ.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Адрес:</translation>
     </message>
     <message>
-        <source>The Mrq address to sign the message with</source>
-        <translation>Адрес Mrq для подписи сообщения с помощью</translation>
+        <source>The vrq address to sign the message with</source>
+        <translation>Адрес vrq для подписи сообщения с помощью</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -275,8 +275,8 @@
         <translation>Копировать текущую подпись в системный буфер обмена</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Mrq address</source>
-        <translation>Подпишите сообщение, чтобы подтвердить свой адрес Mrq</translation>
+        <source>Sign the message to prove you own this vrq address</source>
+        <translation>Подпишите сообщение, чтобы подтвердить свой адрес vrq</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -299,12 +299,12 @@
         <translation>Введите зашифрованный с помощью BIP 38 секретный ключ. Введите секретную фразу в среднем окне. Нажмите Дешифровать Ключ чтобы создать секретный ключ. Нажав на Импортировать Адрес после дешифровки, вы добавите секретный ключ к кошельку.</translation>
     </message>
     <message>
-        <source>The Mrq address the message was signed with</source>
-        <translation>Адрес Mrq, которым подписано сообщение</translation>
+        <source>The vrq address the message was signed with</source>
+        <translation>Адрес vrq, которым подписано сообщение</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Mrq address</source>
-        <translation>Проверте сообщение, чтобы убедиться, что оно было подписано указанным Mrq адресом </translation>
+        <source>Verify the message to ensure it was signed with the specified vrq address</source>
+        <translation>Проверте сообщение, чтобы убедиться, что оно было подписано указанным vrq адресом </translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -594,16 +594,16 @@
         <translation>Панель вкладок</translation>
     </message>
     <message>
-        <source>Mrq</source>
-        <translation>Mrq</translation>
+        <source>vrq</source>
+        <translation>vrq</translation>
     </message>
     <message>
-        <source>Send coins to a Mrq address</source>
-        <translation>Отправить монеты на Mrq адрес</translation>
+        <source>Send coins to a vrq address</source>
+        <translation>Отправить монеты на vrq адрес</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and mrq: URIs)</source>
-        <translation>Запросить платежи (генерирует QR-код и Mrq: URI)</translation>
+        <source>Request payments (generates QR codes and vrq: URIs)</source>
+        <translation>Запросить платежи (генерирует QR-код и vrq: URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -614,24 +614,24 @@
         <translation>Обзор мастернод</translation>
     </message>
     <message>
-        <source>&amp;About Mrq</source>
-        <translation>&amp;О Mrq</translation>
+        <source>&amp;About vrq</source>
+        <translation>&amp;О vrq</translation>
     </message>
     <message>
-        <source>Show information about Mrq</source>
-        <translation>Показать информацию о Mrq</translation>
+        <source>Show information about vrq</source>
+        <translation>Показать информацию о vrq</translation>
     </message>
     <message>
-        <source>Modify configuration options for Mrq</source>
-        <translation>Изменение параметров конфигурации Mrq</translation>
+        <source>Modify configuration options for vrq</source>
+        <translation>Изменение параметров конфигурации vrq</translation>
     </message>
     <message>
-        <source>Sign messages with your Mrq addresses to prove you own them</source>
-        <translation>Подписывайте сообщения вашими Mrq адресами, чтобы доказать, что вы их владелец</translation>
+        <source>Sign messages with your vrq addresses to prove you own them</source>
+        <translation>Подписывайте сообщения вашими vrq адресами, чтобы доказать, что вы их владелец</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Mrq addresses</source>
-        <translation>Проверте сообщения, чтобы убедиться, что они были подписаны указанным Mrq адресом </translation>
+        <source>Verify messages to ensure they were signed with specified vrq addresses</source>
+        <translation>Проверте сообщения, чтобы убедиться, что они были подписаны указанным vrq адресом </translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -662,8 +662,8 @@
         <translation>Открыть файл настроек мастернод</translation>
     </message>
     <message>
-        <source>Open a Mrq: URI or payment request</source>
-        <translation>Открыть Mrq: URI или запрос платежа</translation>
+        <source>Open a vrq: URI or payment request</source>
+        <translation>Открыть vrq: URI или запрос платежа</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -674,16 +674,16 @@
         <translation>Окно обзора блока</translation>
     </message>
     <message>
-        <source>Show the Mrq help message to get a list with possible Mrq command-line options</source>
-        <translation>Смотрите помощь к программе, чтобы получить документацию ко всем возможным опциям комманды Mrq</translation>
+        <source>Show the vrq help message to get a list with possible vrq command-line options</source>
+        <translation>Смотрите помощь к программе, чтобы получить документацию ко всем возможным опциям комманды vrq</translation>
     </message>
     <message>
-        <source>Mrq client</source>
-        <translation>Клиент Mrq</translation>
+        <source>vrq client</source>
+        <translation>Клиент vrq</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Mrq network</source>
-        <translation><numerusform>%n активное подключение к сети Mrq</numerusform><numerusform>%n активных подключений к сети Mrq</numerusform><numerusform>%n активных подключений к сети Mrq</numerusform><numerusform>%n активных подключений к сети Mrq</numerusform></translation>
+        <source>%n active connection(s) to vrq network</source>
+        <translation><numerusform>%n активное подключение к сети vrq</numerusform><numerusform>%n активных подключений к сети vrq</numerusform><numerusform>%n активных подключений к сети vrq</numerusform><numerusform>%n активных подключений к сети vrq</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -829,8 +829,8 @@ MultiSend: %1</translation>
         <translation>Текстовая метка</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (mrq.conf).</source>
-        <translation>Будут показаны не все транзакции. Для отображения всех транзакций необходимо выставить txindex=1 в конфигурационном файле (mrq.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (vrq.conf).</source>
+        <translation>Будут показаны не все транзакции. Для отображения всех транзакций необходимо выставить txindex=1 в конфигурационном файле (vrq.conf).</translation>
     </message>
 </context>
 <context>
@@ -1130,8 +1130,8 @@ MultiSend: %1</translation>
         <translation>Изменить адрес отправки</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Mrq address.</source>
-        <translation>Введенный адрес "%1" не является Mrq адресом.</translation>
+        <source>The entered address "%1" is not a valid vrq address.</source>
+        <translation>Введенный адрес "%1" не является vrq адресом.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1176,16 +1176,16 @@ MultiSend: %1</translation>
         <translation>версия</translation>
     </message>
     <message>
-        <source>Mrq</source>
-        <translation>Mrq</translation>
+        <source>vrq</source>
+        <translation>vrq</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-бит)</translation>
     </message>
     <message>
-        <source>About Mrq</source>
-        <translation>О Mrq</translation>
+        <source>About vrq</source>
+        <translation>О vrq</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1231,16 +1231,16 @@ MultiSend: %1</translation>
         <translation>Добро пожаловать</translation>
     </message>
     <message>
-        <source>Welcome to Mrq.</source>
-        <translation>Добро пожаловать в Mrq.</translation>
+        <source>Welcome to vrq.</source>
+        <translation>Добро пожаловать в vrq.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Mrq will store its data.</source>
-        <translation>Поскольку это первый запуск программы, вы можете выбрать, где будут храниться данные Mrq.</translation>
+        <source>As this is the first time the program is launched, you can choose where vrq will store its data.</source>
+        <translation>Поскольку это первый запуск программы, вы можете выбрать, где будут храниться данные vrq.</translation>
     </message>
     <message>
-        <source>Mrq will download and store a copy of the Mrq block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Mrq загрузит и сохранит копию цепочки блоков Mrq. Каталог будет занимать около %1GB и со временем размер будет увеличиваться. Кроме того, в этом каталоге будет храниться кошелек.</translation>
+        <source>vrq will download and store a copy of the vrq block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>vrq загрузит и сохранит копию цепочки блоков vrq. Каталог будет занимать около %1GB и со временем размер будет увеличиваться. Кроме того, в этом каталоге будет храниться кошелек.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1251,8 +1251,8 @@ MultiSend: %1</translation>
         <translation>Использовать другой каталог данных:</translation>
     </message>
     <message>
-        <source>Mrq</source>
-        <translation>Mrq</translation>
+        <source>vrq</source>
+        <translation>vrq</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1393,12 +1393,12 @@ MultiSend: %1</translation>
         <translation>Введите адрес для отправки</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Mrq addresses after it matures.
-To Add: enter percentage to give and Mrq address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other vrq addresses after it matures.
+To Add: enter percentage to give and vrq address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend позволяет вам автоматически отправлять до 100% вознаграждения за мастерноды и хранение, после их созревания, на другие Mrq адреса.
-Для добавления: введите передаваемый процент и Mrq адрес для добавления к вектору MultiSend.
+        <translation>MultiSend позволяет вам автоматически отправлять до 100% вознаграждения за мастерноды и хранение, после их созревания, на другие vrq адреса.
+Для добавления: введите передаваемый процент и vrq адрес для добавления к вектору MultiSend.
 Для удаления: введите удаляемый адрес и нажмите удалить.
 MultiSend будет неактивен до тех пор, пока вы не нажмете Включить</translation>
     </message>
@@ -1536,48 +1536,48 @@ Please check the address and try again.</source>
         <translation>Выберите уровень конфиденциальности.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 Mrq</source>
-        <translation>Используйте 2 разные мастерноды для смешивания средств до 10000 Mrq</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 vrq</source>
+        <translation>Используйте 2 разные мастерноды для смешивания средств до 10000 vrq</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 Mrq</source>
-        <translation>Используйте 8 разных мастернод для смешивания средств до 10000 Mrq</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 vrq</source>
+        <translation>Используйте 8 разных мастернод для смешивания средств до 10000 vrq</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Используйте 16 разных мастернод</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 Mrq to anonymize 10000 Mrq</source>
-        <translation>Этот вариант является самым быстрым и будет стоить порядка ~0.025 Mrq для анонимизации 10000 Mrq</translation>
+        <source>This option is the quickest and will cost about ~0.025 vrq to anonymize 10000 vrq</source>
+        <translation>Этот вариант является самым быстрым и будет стоить порядка ~0.025 vrq для анонимизации 10000 vrq</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 Mrq to anonymize 10000 Mrq</source>
-        <translation>Это средний по скорости вариант и он будет стоить около 0.05 Mrq для анонимизации 10000 Mrq</translation>
+        <source>This option is moderately fast and will cost about 0.05 vrq to anonymize 10000 vrq</source>
+        <translation>Это средний по скорости вариант и он будет стоить около 0.05 vrq для анонимизации 10000 vrq</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Это самый медленный и безопасный вариант. Максимальная анонимность стоит</translation>
     </message>
     <message>
-        <source>0.1 Mrq per 10000 Mrq you anonymize.</source>
-        <translation>0.1 Mrq за 10000 Mrq которые вы собираетесь анонимизировать.</translation>
+        <source>0.1 vrq per 10000 vrq you anonymize.</source>
+        <translation>0.1 vrq за 10000 vrq которые вы собираетесь анонимизировать.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
         <translation>Настройка Перемешивания</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Mrq's configuration screen.</source>
-        <translation>Перемешивание было успешно выставлено на стандартные значения (%1 и 2 цикла). Вы в любой момент можете это изменить, открыв окно настройки Mrq.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening vrq's configuration screen.</source>
+        <translation>Перемешивание было успешно выставлено на стандартные значения (%1 и 2 цикла). Вы в любой момент можете это изменить, открыв окно настройки vrq.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Mrq's configuration screen.</source>
-        <translation>Перемешивание было успешно выбрано как высокое (%1 и 8 циклов). Вы в любой момент можете это изменить, открыв окно настройки Mrq.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening vrq's configuration screen.</source>
+        <translation>Перемешивание было успешно выбрано как высокое (%1 и 8 циклов). Вы в любой момент можете это изменить, открыв окно настройки vrq.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Mrq's configuration screen.</source>
-        <translation>Перемешивание было успешно выставлено на максимальное (%1 и 16 циклов). Вы в любой момент можете это изменить, открыв окно настройки Mrq.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening vrq's configuration screen.</source>
+        <translation>Перемешивание было успешно выставлено на максимальное (%1 и 16 циклов). Вы в любой момент можете это изменить, открыв окно настройки vrq.</translation>
     </message>
 </context>
 <context>
@@ -1638,8 +1638,8 @@ Please check the address and try again.</source>
         <translation>Отключив проведение неподтвержденных изменений все изменения о транзакции &lt;br/&gt;не будут использованы пока транзакция не получит хотя бы одно подтверждение.&lt;br/&gt;Также это влияет на расчет вашего баланса.</translation>
     </message>
     <message>
-        <source>Automatically open the Mrq client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматически открыть клиентский порт Mrq через роутер. Ваш роутер должен поддерживать UPnP, а сам сервис должен быть включен.</translation>
+        <source>Automatically open the vrq client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматически открыть клиентский порт vrq через роутер. Ваш роутер должен поддерживать UPnP, а сам сервис должен быть включен.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1658,12 +1658,12 @@ Please check the address and try again.</source>
         <translation>Эксперт</translation>
     </message>
     <message>
-        <source>Automatically start Mrq after logging in to the system.</source>
-        <translation>Автоматически запускать Mrq после входа в систему.</translation>
+        <source>Automatically start vrq after logging in to the system.</source>
+        <translation>Автоматически запускать vrq после входа в систему.</translation>
     </message>
     <message>
-        <source>&amp;Start Mrq on system login</source>
-        <translation>&amp;Запускать Mrq при входе в систему</translation>
+        <source>&amp;Start vrq on system login</source>
+        <translation>&amp;Запускать vrq при входе в систему</translation>
     </message>
     <message>
         <source>This setting determines the amount of individual masternodes that an input will be anonymized through.&lt;br/&gt;More rounds of anonymization gives a higher degree of privacy, but also costs more in fees.</source>
@@ -1678,8 +1678,8 @@ Please check the address and try again.</source>
         <translation>При достижении этого значения Перемешивание будет отключено.</translation>
     </message>
     <message>
-        <source>Amount of Mrq to keep anonymized</source>
-        <translation>Количество Mrq, держащихся анонимизированными</translation>
+        <source>Amount of vrq to keep anonymized</source>
+        <translation>Количество vrq, держащихся анонимизированными</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1706,22 +1706,22 @@ Please check the address and try again.</source>
         <translation>&amp;Сеть</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Mrq.</source>
-        <translation>Здесь можно выставить язык интерфейса. Изменения вступят в силу после перезапуска Mrq.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting vrq.</source>
+        <translation>Здесь можно выставить язык интерфейса. Изменения вступят в силу после перезапуска vrq.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/mrqcoin/mrqcoin-translations</source>
+https://www.transifex.com/vrqcoin/vrqcoin-translations</source>
         <translation>Отсутствует ваш язык или заметили незавершенный перевод? Вы можете помочь нам стать лучше:
-https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
+https://www.transifex.com/vrqcoin/vrqcoin-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Карта порта, использующего &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Mrq network through a SOCKS5 proxy.</source>
-        <translation>Подключиться к сети Mrq через SOCKS5 прокси.</translation>
+        <source>Connect to the vrq network through a SOCKS5 proxy.</source>
+        <translation>Подключиться к сети vrq через SOCKS5 прокси.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1875,8 +1875,8 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
         <translation>Балансы</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Mrq network after a connection is established, but this process has not completed yet.</source>
-        <translation>Возможно отображаемая информация устарела. Ваш кошелек автоматически синхронизируется с сетью Mrq после установки соединения, но этот процесс еще не завершен. </translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the vrq network after a connection is established, but this process has not completed yet.</source>
+        <translation>Возможно отображаемая информация устарела. Ваш кошелек автоматически синхронизируется с сетью vrq после установки соединения, но этот процесс еще не завершен. </translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
@@ -1919,8 +1919,8 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
         <translation>Баланс Обфускации</translation>
     </message>
     <message>
-        <source>0 Mrq / 0 Rounds</source>
-        <translation>0 Mrq / 0 Циклов</translation>
+        <source>0 vrq / 0 Rounds</source>
+        <translation>0 vrq / 0 Циклов</translation>
     </message>
     <message>
         <source>Enabled/Disabled</source>
@@ -2072,12 +2072,12 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
         <translation>Неверный адрес оплаты %1</translation>
     </message>
     <message>
-        <source>Cannot start mrq: click-to-pay handler</source>
-        <translation>Не удалось запустить mrq: обработчик click-to-pay </translation>
+        <source>Cannot start vrq: click-to-pay handler</source>
+        <translation>Не удалось запустить vrq: обработчик click-to-pay </translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Mrq address or malformed URI parameters.</source>
-        <translation>URI не интерпретируется! Причиной этому может быть неверный Mrq адрес или неверные параметеры URI.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid vrq address or malformed URI parameters.</source>
+        <translation>URI не интерпретируется! Причиной этому может быть неверный vrq адрес или неверные параметеры URI.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2162,8 +2162,8 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
         <translation>Сумма</translation>
     </message>
     <message>
-        <source>Enter a Mrq address (e.g. %1)</source>
-        <translation>Введите адрес Mrq (например %1)</translation>
+        <source>Enter a vrq address (e.g. %1)</source>
+        <translation>Введите адрес vrq (например %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2296,8 +2296,8 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
         <translation>Блокчейн</translation>
     </message>
     <message>
-        <source>Open the Mrq debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Открыть протокол отладки Mrq. Это может занять некоторе время, если файл протокола очень большой.</translation>
+        <source>Open the vrq debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Открыть протокол отладки vrq. Это может занять некоторе время, если файл протокола очень большой.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2457,8 +2457,8 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
         <translation>Вывод:</translation>
     </message>
     <message>
-        <source>Welcome to the Mrq RPC console.</source>
-        <translation>Добро пожаловать в окружение Mrq RPC.</translation>
+        <source>Welcome to the vrq RPC console.</source>
+        <translation>Добро пожаловать в окружение vrq RPC.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2677,8 +2677,8 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
         <translation>Изменить:</translation>
     </message>
     <message>
-        <source>0 Mrq</source>
-        <translation>0 Mrq</translation>
+        <source>0 vrq</source>
+        <translation>0 vrq</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2761,8 +2761,8 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
         <translation>Копировать изменение</translation>
     </message>
     <message>
-        <source>Warning: Invalid Mrq address</source>
-        <translation>Предупреждение: неправильный Mrq адрес</translation>
+        <source>Warning: Invalid vrq address</source>
+        <translation>Предупреждение: неправильный vrq адрес</translation>
     </message>
     <message>
         <source>and SwiftTX</source>
@@ -2815,8 +2815,8 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Mrq is shutting down...</source>
-        <translation>Mrq выключается...</translation>
+        <source>vrq is shutting down...</source>
+        <translation>vrq выключается...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2826,8 +2826,8 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The Mrq address to sign the message with</source>
-        <translation>Адрес Mrq для подписи сообщения с помощью</translation>
+        <source>The vrq address to sign the message with</source>
+        <translation>Адрес vrq для подписи сообщения с помощью</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2850,16 +2850,16 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
         <translation>Копировать текущую подпись в системный буфер обмена</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Mrq address</source>
-        <translation>Подпишите сообщение, чтобы подтвердить свой адрес Mrq</translation>
+        <source>Sign the message to prove you own this vrq address</source>
+        <translation>Подпишите сообщение, чтобы подтвердить свой адрес vrq</translation>
     </message>
     <message>
-        <source>The Mrq address the message was signed with</source>
-        <translation>Адрес Mrq, которым подписано сообщение</translation>
+        <source>The vrq address the message was signed with</source>
+        <translation>Адрес vrq, которым подписано сообщение</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Mrq address</source>
-        <translation>Проверте сообщение, чтобы убедиться, что оно было подписано указанным Mrq адресом </translation>
+        <source>Verify the message to ensure it was signed with the specified vrq address</source>
+        <translation>Проверте сообщение, чтобы убедиться, что оно было подписано указанным vrq адресом </translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -2905,8 +2905,8 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Mrq</source>
-        <translation>Mrq</translation>
+        <source>vrq</source>
+        <translation>vrq</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2921,8 +2921,8 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
         <translation>Разработчики Dash Core</translation>
     </message>
     <message>
-        <source>The Mrq developers</source>
-        <translation>Разработчики Mrq</translation>
+        <source>The vrq developers</source>
+        <translation>Разработчики vrq</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3173,7 +3173,7 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
     </message>
     </context>
 <context>
-    <name>mrq-core</name>
+    <name>vrq-core</name>
     <message>
         <source>SwiftTX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
         <translation>Для SwiftTX требуется как минимум 6 подтверждений, Вам нужно подождать несколько минут и попытаться снова.</translation>
@@ -3211,8 +3211,8 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
         <translation>Copyright (C) 2015-%i Разработчики PIVX Core</translation>
     </message>
     <message>
-        <source>Copyright (C) %i The Mrq Developers</source>
-        <translation>Copyright (C) %i Разработчики Mrq</translation>
+        <source>Copyright (C) %i The vrq Developers</source>
+        <translation>Copyright (C) %i Разработчики vrq</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>

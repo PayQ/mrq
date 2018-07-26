@@ -24,12 +24,12 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
-    git clone https://github.com/mrqcoin/gitian.sigs.git
+    git clone https://github.com/vrqcoin/gitian.sigs.git
     git clone https://github.com/PayQ/vrc-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
     git clone https://github.com/PayQ/vrc.git
 
-### Mrq maintainers/release engineers, suggestion for writing release notes
+### vrq maintainers/release engineers, suggestion for writing release notes
 
 Write release notes. git shortlog helps a lot, for example:
 
@@ -50,7 +50,7 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 
 Setup Gitian descriptors:
 
-    pushd ./mrq
+    pushd ./vrq
     export SIGNER=(your Gitian key, ie bluematt, sipa, etc)
     export VERSION=(new version, e.g. 0.8.0)
     git fetch
@@ -84,7 +84,7 @@ Create the OS X SDK tarball, see the [OS X readme](README_osx.md) for details, a
 By default, Gitian will fetch source files as needed. To cache them ahead of time:
 
     pushd ./gitian-builder
-    make -C ../mrq/depends download SOURCES_PATH=`pwd`/cache/common
+    make -C ../vrq/depends download SOURCES_PATH=`pwd`/cache/common
     popd
 
 Only missing files will be fetched, so this is safe to re-run for each build.
@@ -92,50 +92,50 @@ Only missing files will be fetched, so this is safe to re-run for each build.
 NOTE: Offline builds must use the --url flag to ensure Gitian fetches only from local URLs. For example:
 
     pushd ./gitian-builder
-    ./bin/gbuild --url mrq=/path/to/mrq,signature=/path/to/sigs {rest of arguments}
+    ./bin/gbuild --url vrq=/path/to/vrq,signature=/path/to/sigs {rest of arguments}
     popd
 
 The gbuild invocations below <b>DO NOT DO THIS</b> by default.
 
-### Build and sign Mrq for Linux, Windows, and OS X:
+### Build and sign vrq for Linux, Windows, and OS X:
 
     pushd ./gitian-builder
-    ./bin/gbuild --memory 3000 --commit mrq=v${VERSION} ../mrq/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../mrq/contrib/gitian-descriptors/gitian-linux.yml
-    mv build/out/mrq-*.tar.gz build/out/src/mrq-*.tar.gz ../
+    ./bin/gbuild --memory 3000 --commit vrq=v${VERSION} ../vrq/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../vrq/contrib/gitian-descriptors/gitian-linux.yml
+    mv build/out/vrq-*.tar.gz build/out/src/vrq-*.tar.gz ../
 
-    ./bin/gbuild --memory 3000 --commit mrq=v${VERSION} ../mrq/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../mrq/contrib/gitian-descriptors/gitian-win.yml
-    mv build/out/mrq-*-win-unsigned.tar.gz inputs/mrq-win-unsigned.tar.gz
-    mv build/out/mrq-*.zip build/out/mrq-*.exe ../
+    ./bin/gbuild --memory 3000 --commit vrq=v${VERSION} ../vrq/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../vrq/contrib/gitian-descriptors/gitian-win.yml
+    mv build/out/vrq-*-win-unsigned.tar.gz inputs/vrq-win-unsigned.tar.gz
+    mv build/out/vrq-*.zip build/out/vrq-*.exe ../
 
-    ./bin/gbuild --memory 3000 --commit mrq=v${VERSION} ../mrq/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../mrq/contrib/gitian-descriptors/gitian-osx.yml
-    mv build/out/mrq-*-osx-unsigned.tar.gz inputs/mrq-osx-unsigned.tar.gz
-    mv build/out/mrq-*.tar.gz build/out/mrq-*.dmg ../
+    ./bin/gbuild --memory 3000 --commit vrq=v${VERSION} ../vrq/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../vrq/contrib/gitian-descriptors/gitian-osx.yml
+    mv build/out/vrq-*-osx-unsigned.tar.gz inputs/vrq-osx-unsigned.tar.gz
+    mv build/out/vrq-*.tar.gz build/out/vrq-*.dmg ../
     popd
 
 Build output expected:
 
-  1. source tarball (`mrq-${VERSION}.tar.gz`)
-  2. linux 32-bit and 64-bit dist tarballs (`mrq-${VERSION}-linux[32|64].tar.gz`)
-  3. windows 32-bit and 64-bit unsigned installers and dist zmrq (`mrq-${VERSION}-win[32|64]-setup-unsigned.exe`, `mrq-${VERSION}-win[32|64].zip`)
-  4. OS X unsigned installer and dist tarball (`mrq-${VERSION}-osx-unsigned.dmg`, `mrq-${VERSION}-osx64.tar.gz`)
+  1. source tarball (`vrq-${VERSION}.tar.gz`)
+  2. linux 32-bit and 64-bit dist tarballs (`vrq-${VERSION}-linux[32|64].tar.gz`)
+  3. windows 32-bit and 64-bit unsigned installers and dist zvrq (`vrq-${VERSION}-win[32|64]-setup-unsigned.exe`, `vrq-${VERSION}-win[32|64].zip`)
+  4. OS X unsigned installer and dist tarball (`vrq-${VERSION}-osx-unsigned.dmg`, `vrq-${VERSION}-osx64.tar.gz`)
   5. Gitian signatures (in `gitian.sigs/${VERSION}-<linux|{win,osx}-unsigned>/(your Gitian key)/`)
 
 ### Verify other gitian builders signatures to your own. (Optional)
 
 Add other gitian builders keys to your gpg keyring, and/or refresh keys.
 
-    gpg --import mrq/contrib/gitian-keys/*.pgp
+    gpg --import vrq/contrib/gitian-keys/*.pgp
     gpg --refresh-keys
 
 Verify the signatures
 
     pushd ./gitian-builder
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../mrq/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../mrq/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../mrq/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../vrq/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../vrq/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../vrq/contrib/gitian-descriptors/gitian-osx.yml
     popd
 
 ### Next steps:
@@ -156,22 +156,22 @@ Codesigner only: Create Windows/OS X detached signatures:
 
 Codesigner only: Sign the osx binary:
 
-    transfer mrq-osx-unsigned.tar.gz to osx for signing
-    tar xf mrq-osx-unsigned.tar.gz
+    transfer vrq-osx-unsigned.tar.gz to osx for signing
+    tar xf vrq-osx-unsigned.tar.gz
     ./detached-sig-create.sh -s "Key ID"
     Enter the keychain password and authorize the signature
     Move signature-osx.tar.gz back to the gitian host
 
 Codesigner only: Sign the windows binaries:
 
-    tar xf mrq-win-unsigned.tar.gz
+    tar xf vrq-win-unsigned.tar.gz
     ./detached-sig-create.sh -key /path/to/codesign.key
     Enter the passphrase for the key when prompted
     signature-win.tar.gz will be created
 
 Codesigner only: Commit the detached codesign payloads:
 
-    cd ~/mrq-detached-sigs
+    cd ~/vrq-detached-sigs
     checkout the appropriate branch for this release series
     rm -rf *
     tar xf signature-osx.tar.gz
@@ -188,20 +188,20 @@ Non-codesigners: wait for Windows/OS X detached signatures:
 Create (and optionally verify) the signed OS X binary:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../mrq/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../mrq/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../mrq/contrib/gitian-descriptors/gitian-osx-signer.yml
-    mv build/out/mrq-osx-signed.dmg ../mrq-${VERSION}-osx.dmg
+    ./bin/gbuild -i --commit signature=v${VERSION} ../vrq/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../vrq/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../vrq/contrib/gitian-descriptors/gitian-osx-signer.yml
+    mv build/out/vrq-osx-signed.dmg ../vrq-${VERSION}-osx.dmg
     popd
 
 Create (and optionally verify) the signed Windows binaries:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../mrq/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../mrq/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../mrq/contrib/gitian-descriptors/gitian-win-signer.yml
-    mv build/out/mrq-*win64-setup.exe ../mrq-${VERSION}-win64-setup.exe
-    mv build/out/mrq-*win32-setup.exe ../mrq-${VERSION}-win32-setup.exe
+    ./bin/gbuild -i --commit signature=v${VERSION} ../vrq/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../vrq/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../vrq/contrib/gitian-descriptors/gitian-win-signer.yml
+    mv build/out/vrq-*win64-setup.exe ../vrq-${VERSION}-win64-setup.exe
+    mv build/out/vrq-*win32-setup.exe ../vrq-${VERSION}-win32-setup.exe
     popd
 
 Commit your signature for the signed OS X/Windows binaries:
@@ -223,17 +223,17 @@ sha256sum * > SHA256SUMS
 
 The list of files should be:
 ```
-mrq-${VERSION}-aarch64-linux-gnu.tar.gz
-mrq-${VERSION}-arm-linux-gnueabihf.tar.gz
-mrq-${VERSION}-i686-pc-linux-gnu.tar.gz
-mrq-${VERSION}-x86_64-linux-gnu.tar.gz
-mrq-${VERSION}-osx64.tar.gz
-mrq-${VERSION}-osx.dmg
-mrq-${VERSION}.tar.gz
-mrq-${VERSION}-win32-setup.exe
-mrq-${VERSION}-win32.zip
-mrq-${VERSION}-win64-setup.exe
-mrq-${VERSION}-win64.zip
+vrq-${VERSION}-aarch64-linux-gnu.tar.gz
+vrq-${VERSION}-arm-linux-gnueabihf.tar.gz
+vrq-${VERSION}-i686-pc-linux-gnu.tar.gz
+vrq-${VERSION}-x86_64-linux-gnu.tar.gz
+vrq-${VERSION}-osx64.tar.gz
+vrq-${VERSION}-osx.dmg
+vrq-${VERSION}.tar.gz
+vrq-${VERSION}-win32-setup.exe
+vrq-${VERSION}-win32.zip
+vrq-${VERSION}-win64-setup.exe
+vrq-${VERSION}-win64.zip
 ```
 The `*-debug*` files generated by the gitian build contain debug symbols
 for troubleshooting by developers. It is assumed that anyone that is interested
@@ -249,13 +249,13 @@ rm SHA256SUMS
 (the digest algorithm is forced to sha256 to avoid confusion of the `Hash:` header that GPG adds with the SHA256 used for the files)
 Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spurious/nonsensical entry.
 
-- Upload zmrq and installers, as well as `SHA256SUMS.asc` from last step, to the GitHub release (see below)
+- Upload zvrq and installers, as well as `SHA256SUMS.asc` from last step, to the GitHub release (see below)
 
 - Announce the release:
 
   - bitcointalk announcement thread
 
-  - Optionally twitter, reddit /r/mrq, ... but this will usually sort out itself
+  - Optionally twitter, reddit /r/vrq, ... but this will usually sort out itself
 
   - Archive release notes for the new version to `doc/release-notes/` (branch `master` and branch of the release)
 

@@ -1,31 +1,31 @@
 #!/bin/bash
 #
-#  mrqd The MRQ core server.
+#  vrqd The vrq core server.
 #
 #
 # chkconfig: 345 80 20
-# description: mrqd
-# processname: mrqd
+# description: vrqd
+# processname: vrqd
 #
 
 # Source function library.
 . /etc/init.d/functions
 
-# you can override defaults in /etc/sysconfig/mrqd, see below
-if [ -f /etc/sysconfig/mrqd ]; then
-        . /etc/sysconfig/mrqd
+# you can override defaults in /etc/sysconfig/vrqd, see below
+if [ -f /etc/sysconfig/vrqd ]; then
+        . /etc/sysconfig/vrqd
 fi
 
 RETVAL=0
 
-prog=mrqd
-# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/mrqd
-lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/mrqd}
+prog=vrqd
+# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/vrqd
+lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/vrqd}
 
-# mrqd defaults to /usr/bin/mrqd, override with BITCOIND_BIN
-bitcoind=${BITCOIND_BIN-/usr/bin/mrqd}
+# vrqd defaults to /usr/bin/vrqd, override with BITCOIND_BIN
+bitcoind=${BITCOIND_BIN-/usr/bin/vrqd}
 
-# mrqd opts default to -disablewallet, override with BITCOIND_OPTS
+# vrqd opts default to -disablewallet, override with BITCOIND_OPTS
 bitcoind_opts=${BITCOIND_OPTS}
 
 start() {

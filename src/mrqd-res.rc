@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "MRQ"
-            VALUE "FileDescription",    "mrqd (OSS daemon/client for Mrq)"
+            VALUE "CompanyName",        "vrq"
+            VALUE "FileDescription",    "vrqd (OSS daemon/client for vrq)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "mrqd"
+            VALUE "InternalName",       "vrqd"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "mrqd.exe"
-            VALUE "ProductName",        "mrqd"
+            VALUE "OriginalFilename",   "vrqd.exe"
+            VALUE "ProductName",        "vrqd"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

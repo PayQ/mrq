@@ -1,12 +1,12 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018 MRQ Developers
+// Copyright (c) 2018 vrq Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/mrq-config.h"
+#include "config/vrq-config.h"
 #endif
 
 #include "bitcoingui.h"
@@ -94,7 +94,7 @@ static void InitMessage(const std::string& message)
  */
 static std::string Translate(const char* psz)
 {
-    return QCoreApplication::translate("mrq-core", psz).toStdString();
+    return QCoreApplication::translate("vrq-core", psz).toStdString();
 }
 
 static QString GetLangTerritory()
@@ -141,11 +141,11 @@ static void initTranslations(QTranslator& qtTranslatorBase, QTranslator& qtTrans
     if (qtTranslator.load("qt_" + lang_territory, QLibraryInfo::location(QLibraryInfo::TranslationsPath)))
         QApplication::installTranslator(&qtTranslator);
 
-    // Load e.g. bitcoin_de.qm (shortcut "de" needs to be defined in mrq.qrc)
+    // Load e.g. bitcoin_de.qm (shortcut "de" needs to be defined in vrq.qrc)
     if (translatorBase.load(lang, ":/translations/"))
         QApplication::installTranslator(&translatorBase);
 
-    // Load e.g. bitcoin_de_DE.qm (shortcut "de_DE" needs to be defined in mrq.qrc)
+    // Load e.g. bitcoin_de_DE.qm (shortcut "de_DE" needs to be defined in vrq.qrc)
     if (translator.load(lang_territory, ":/translations/"))
         QApplication::installTranslator(&translator);
 }
@@ -166,7 +166,7 @@ void DebugMessageHandler(QtMsgType type, const QMessageLogContext& context, cons
 }
 #endif
 
-/** Class encapsulating Mrq startup and shutdown.
+/** Class encapsulating vrq startup and shutdown.
  * Allows running startup and shutdown in a different thread from the UI thread.
  */
 class BitcoinCore : public QObject
@@ -195,7 +195,7 @@ private:
     void handleRunawayException(std::exception* e);
 };
 
-/** Main MRQ application object */
+/** Main vrq application object */
 class BitcoinApplication : public QApplication
 {
     Q_OBJECT
@@ -253,7 +253,7 @@ private:
     void startThread();
 };
 
-#include "mrq.moc"
+#include "vrq.moc"
 
 BitcoinCore::BitcoinCore() : QObject()
 {
@@ -484,7 +484,7 @@ void BitcoinApplication::initializeResult(int retval)
 
 #ifdef ENABLE_WALLET
         // Now that initialization/startup is done, process any command-line
-        // MRQ: URIs or payment requests:
+        // vrq: URIs or payment requests:
         connect(paymentServer, SIGNAL(receivedPaymentRequest(SendCoinsRecipient)),
             window, SLOT(handlePaymentRequest(SendCoinsRecipient)));
         connect(window, SIGNAL(receivedURI(QString)),
@@ -506,7 +506,7 @@ void BitcoinApplication::shutdownResult(int retval)
 
 void BitcoinApplication::handleRunawayException(const QString& message)
 {
-    QMessageBox::critical(0, "Runaway exception", BitcoinGUI::tr("A fatal error occurred. MRQ can no longer continue safely and will quit.") + QString("\n\n") + message);
+    QMessageBox::critical(0, "Runaway exception", BitcoinGUI::tr("A fatal error occurred. vrq can no longer continue safely and will quit.") + QString("\n\n") + message);
     ::exit(1);
 }
 
@@ -536,8 +536,8 @@ int main(int argc, char* argv[])
     QTextCodec::setCodecForCStrings(QTextCodec::codecForTr());
 #endif
 
-    Q_INIT_RESOURCE(mrq_locale);
-    Q_INIT_RESOURCE(mrq);
+    Q_INIT_RESOURCE(vrq_locale);
+    Q_INIT_RESOURCE(vrq);
 
     BitcoinApplication app(argc, argv);
 #if QT_VERSION > 0x050100
@@ -584,17 +584,17 @@ int main(int argc, char* argv[])
     if (!Intro::pickDataDirectory())
         return 0;
 
-    /// 6. Determine availability of data directory and parse mrq.conf
+    /// 6. Determine availability of data directory and parse vrq.conf
     /// - Do not call GetDataDir(true) before this step finishes
     if (!boost::filesystem::is_directory(GetDataDir(false))) {
-        QMessageBox::critical(0, QObject::tr("Mrq"),
+        QMessageBox::critical(0, QObject::tr("vrq"),
             QObject::tr("Error: Specified data directory \"%1\" does not exist.").arg(QString::fromStdString(mapArgs["-datadir"])));
         return 1;
     }
     try {
         ReadConfigFile(mapArgs, mapMultiArgs);
     } catch (std::exception& e) {
-        QMessageBox::critical(0, QObject::tr("Mrq"),
+        QMessageBox::critical(0, QObject::tr("vrq"),
             QObject::tr("Error: Cannot parse configuration file: %1. Only use key=value syntax.").arg(e.what()));
         return false;
     }
@@ -607,7 +607,7 @@ int main(int argc, char* argv[])
 
     // Check for -testnet or -regtest parameter (Params() calls are only valid after this clause)
     if (!SelectParamsFromCommandLine()) {
-        QMessageBox::critical(0, QObject::tr("Mrq"), QObject::tr("Error: Invalid combination of -regtest and -testnet."));
+        QMessageBox::critical(0, QObject::tr("vrq"), QObject::tr("Error: Invalid combination of -regtest and -testnet."));
         return 1;
     }
 #ifdef ENABLE_WALLET
@@ -626,7 +626,7 @@ int main(int argc, char* argv[])
     /// 7a. parse masternode.conf
     string strErr;
     if (!masternodeConfig.read(strErr)) {
-        QMessageBox::critical(0, QObject::tr("Mrq"),
+        QMessageBox::critical(0, QObject::tr("vrq"),
             QObject::tr("Error reading masternode configuration file: %1").arg(strErr.c_str()));
         return false;
     }
@@ -641,7 +641,7 @@ int main(int argc, char* argv[])
         exit(0);
 
     // Start up the payment server early, too, so impatient users that click on
-    // mrq: links repeatedly have their payment requests routed to this process:
+    // vrq: links repeatedly have their payment requests routed to this process:
     app.createPaymentServer();
 #endif
 
@@ -672,7 +672,7 @@ int main(int argc, char* argv[])
         app.createWindow(networkStyle.data());
         app.requestInitialize();
 #if defined(Q_OS_WIN) && QT_VERSION >= 0x050000
-        WinShutdownMonitor::registerShutdownBlockReason(QObject::tr("Mrq didn't yet exit safely..."), (HWND)app.getMainWinId());
+        WinShutdownMonitor::registerShutdownBlockReason(QObject::tr("vrq didn't yet exit safely..."), (HWND)app.getMainWinId());
 #endif
         app.exec();
         app.requestShutdown();

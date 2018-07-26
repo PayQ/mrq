@@ -181,7 +181,7 @@
       <string>Asks</string>
      </property>
     </widget>
-    <widget class="QLabel" name="MrqSupply">
+    <widget class="QLabel" name="vrqSupply">
      <property name="geometry">
       <rect>
        <x>540</x>
@@ -197,7 +197,7 @@
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="MrqDemand">
+    <widget class="QLabel" name="vrqDemand">
      <property name="geometry">
       <rect>
        <x>160</x>
@@ -432,7 +432,7 @@
     <attribute name="title">
      <string>Buy</string>
     </attribute>
-    <widget class="QPushButton" name="BuyMrq">
+    <widget class="QPushButton" name="Buyvrq">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -442,10 +442,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>Buy Mrq</string>
+      <string>Buy vrq</string>
      </property>
      <property name="icon">
-      <iconset resource="../mrq.qrc">
+      <iconset resource="../vrq.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -512,7 +512,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>Mrq</string>
+      <string>vrq</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_5">
@@ -1704,10 +1704,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>Mrq</string>
+      <string>vrq</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="UnitsInputMrq">
+    <widget class="QLineEdit" name="UnitsInputvrq">
      <property name="geometry">
       <rect>
        <x>310</x>
@@ -1741,7 +1741,7 @@
       </font>
      </property>
     </widget>
-    <widget class="QPushButton" name="SellMrqBTN">
+    <widget class="QPushButton" name="SellvrqBTN">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -1751,10 +1751,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>Sell Mrq</string>
+      <string>Sell vrq</string>
      </property>
      <property name="icon">
-      <iconset resource="../mrq">
+      <iconset resource="../vrq">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -1777,12 +1777,12 @@
          </font>
         </property>
         <property name="text">
-         <string>Mrq Available:</string>
+         <string>vrq Available:</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="MrqAvailableLabel">
+       <widget class="QLabel" name="vrqAvailableLabel">
         <property name="palette">
          <palette>
           <active>
@@ -2213,7 +2213,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="labelMrq">
+       <widget class="QLabel" name="labelvrq">
         <property name="font">
          <font>
           <weight>75</weight>
@@ -2221,7 +2221,7 @@
          </font>
         </property>
         <property name="text">
-         <string>Mrq</string>
+         <string>vrq</string>
         </property>
        </widget>
       </item>
@@ -2733,7 +2733,7 @@
       <string>TextLabel</string>
      </property>
     </widget>
-    <widget class="QLabel" name="MrqBalanceLabel">
+    <widget class="QLabel" name="vrqBalanceLabel">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2762,7 +2762,7 @@
       </font>
      </property>
      <property name="text">
-      <string>Mrq Balance:</string>
+      <string>vrq Balance:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_12">
@@ -2784,7 +2784,7 @@
       <string>BTC Balance:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="MrqAvailableLabel_2">
+    <widget class="QLabel" name="vrqAvailableLabel_2">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2813,7 +2813,7 @@
       </font>
      </property>
      <property name="text">
-      <string>Mrq Available:</string>
+      <string>vrq Available:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_14">
@@ -2832,10 +2832,10 @@
       </font>
      </property>
      <property name="text">
-      <string>Mrq Pending:</string>
+      <string>vrq Pending:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="MrqPendingLabel">
+    <widget class="QLabel" name="vrqPendingLabel">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2928,7 +2928,7 @@
       </font>
      </property>
      <property name="text">
-      <string>Bittrex Mrq Deposit Address:</string>
+      <string>Bittrex vrq Deposit Address:</string>
      </property>
     </widget>
     <widget class="QPushButton" name="GenDepositBTN">
@@ -2941,10 +2941,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>Generate Mrq Deposit Address</string>
+      <string>Generate vrq Deposit Address</string>
      </property>
      <property name="icon">
-      <iconset resource="../mrq.qrc">
+      <iconset resource="../vrq.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -3155,7 +3155,7 @@
        <string notr="true">border: 1px solid #61696c;margin-left:4px;</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="btnConvertMrq">
+     <widget class="QPushButton" name="btnConvertvrq">
       <property name="geometry">
        <rect>
         <x>260</x>
@@ -3206,7 +3206,7 @@
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap resource="../mrq.qrc">:/icons/transaction_1</pixmap>
+       <pixmap resource="../vrq.qrc">:/icons/transaction_1</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -3253,7 +3253,7 @@
       <string>Update API Keys</string>
      </property>
      <property name="icon">
-      <iconset resource="../mrq.qrc">
+      <iconset resource="../vrq.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -3408,7 +3408,7 @@
   </widget>
  </widget>
  <resources>
-  <include location="../mrq.qrc"/>
+  <include location="../vrq.qrc"/>
  </resources>
  <connections/>
 </ui>

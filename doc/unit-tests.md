@@ -6,13 +6,13 @@ and tests weren't explicitly disabled.
 
 After configuring, they can be run with 'make check'.
 
-To run the mrqd tests manually, launch src/test/test_mrq .
+To run the vrqd tests manually, launch src/test/test_vrq .
 
-To add more mrqd tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
+To add more vrqd tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
 .cpp files in the test/ directory or add new .cpp files that
 implement new BOOST_AUTO_TEST_SUITE sections.
 
-To run the mrq-qt tests manually, launch src/qt/test/mrq-qt_test
+To run the vrq-qt tests manually, launch src/qt/test/vrq-qt_test
 
-To add more mrq-qt tests, add them to the `src/qt/test/` directory and
+To add more vrq-qt tests, add them to the `src/qt/test/` directory and
 the `src/qt/test/test_main.cpp` file.

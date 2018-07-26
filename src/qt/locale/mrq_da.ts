@@ -15,7 +15,7 @@
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
-        <translation>Kopier til udklmrqholder</translation>
+        <translation>Kopier til udklvrqholder</translation>
     </message>
     <message>
         <source>&amp;Copy</source>
@@ -62,11 +62,11 @@
         <translation>Modtageradresse</translation>
     </message>
     <message>
-        <source>These are your Mrq addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your vrq addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Dine adresser til at sende betalinger med. Kontroller altid både beløb og modtageradresse før afsendelse.</translation>
     </message>
     <message>
-        <source>These are your Mrq addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your vrq addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Dette er dine modtager adresser. Det anbefales at anvende en ny adresse til hver transaktion</translation>
     </message>
     <message>
@@ -176,16 +176,16 @@
         <translation>Bekræft, og tegnebogen krypteres.</translation>
     </message>
     <message>
-        <source>Mrq will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Mrqs from being stolen by malware infecting your computer.</source>
-        <translation>Mrq vil lukke ned for at færdiggøre kryptograferingsprocesserne. Husk at kryptering alene ikke sikrer mod tyveri af mønterne fra malware eller virus på computeren.</translation>
+        <source>vrq will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your vrqs from being stolen by malware infecting your computer.</source>
+        <translation>vrq vil lukke ned for at færdiggøre kryptograferingsprocesserne. Husk at kryptering alene ikke sikrer mod tyveri af mønterne fra malware eller virus på computeren.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Er du sikker på, at du vil kryptere din tegnebog?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR Mrq&lt;/b&gt;!</source>
-        <translation>Advarsel! Hvis du krypterer din tegnebog og mister dit password vil du &lt;b&gt;MISTE ALLE DINE Mrq&lt;/b&gt;. Passworded kan ikke genskabes.</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR vrq&lt;/b&gt;!</source>
+        <translation>Advarsel! Hvis du krypterer din tegnebog og mister dit password vil du &lt;b&gt;MISTE ALLE DINE vrq&lt;/b&gt;. Passworded kan ikke genskabes.</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -239,16 +239,16 @@
         <translation>BIP 38 kryptografering</translation>
     </message>
     <message>
-        <source>Enter a Mrq Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Indtast den Mrq adresse De ønsker at kryptografere ved hjælp af BIP 38. Indtast et kodeord i den midterste boks. Klik på krypter for at generere den kryptograferede private nøgle.</translation>
+        <source>Enter a vrq Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Indtast den vrq adresse De ønsker at kryptografere ved hjælp af BIP 38. Indtast et kodeord i den midterste boks. Klik på krypter for at generere den kryptograferede private nøgle.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresse</translation>
     </message>
     <message>
-        <source>The Mrq address to sign the message with</source>
-        <translation>Den Mrq adresse, der skal bruges til at underskrive beskeden med.</translation>
+        <source>The vrq address to sign the message with</source>
+        <translation>Den vrq adresse, der skal bruges til at underskrive beskeden med.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -260,7 +260,7 @@
     </message>
     <message>
         <source>Paste address from clipboard</source>
-        <translation>Indsæt adresse fra udklmrqholderen.</translation>
+        <translation>Indsæt adresse fra udklvrqholderen.</translation>
     </message>
     <message>
         <source>Alt+P</source>
@@ -276,11 +276,11 @@
     </message>
     <message>
         <source>Copy the current signature to the system clipboard</source>
-        <translation>Kopier den aktuelle underskrift til udklmrqholderen.</translation>
+        <translation>Kopier den aktuelle underskrift til udklvrqholderen.</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Mrq address</source>
-        <translation>Underskriv beskeden for at bevise, at De ejer denne Mrq adresse.</translation>
+        <source>Sign the message to prove you own this vrq address</source>
+        <translation>Underskriv beskeden for at bevise, at De ejer denne vrq adresse.</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Indtast den krypterede BIP 38 nøgle. Indtast kodeordet i den midterste boks. Klik på dekryptér for at generere den private nøgle. Når nøglen er dekrypteret vil klip på "importér adresse" overføre den private nøgle til tegnebogen.</translation>
     </message>
     <message>
-        <source>The Mrq address the message was signed with</source>
-        <translation>Beskeden er underskrevet med denne Mrq adresse</translation>
+        <source>The vrq address the message was signed with</source>
+        <translation>Beskeden er underskrevet med denne vrq adresse</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Mrq address</source>
-        <translation>verificer beskeden for at sikre, at den blev underskrevet med den rigtige Mrq adresse.</translation>
+        <source>Verify the message to ensure it was signed with the specified vrq address</source>
+        <translation>verificer beskeden for at sikre, at den blev underskrevet med den rigtige vrq adresse.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -598,16 +598,16 @@
         <translation>Værktøjslinier</translation>
     </message>
     <message>
-        <source>Mrq</source>
-        <translation>Mrq kerne</translation>
+        <source>vrq</source>
+        <translation>vrq kerne</translation>
     </message>
     <message>
-        <source>Send coins to a Mrq address</source>
-        <translation>Send mønter til en Mrq adresse</translation>
+        <source>Send coins to a vrq address</source>
+        <translation>Send mønter til en vrq adresse</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and mrq: URIs)</source>
-        <translation>Anmod om betaling (genrerer QR kode og Mrq URL)</translation>
+        <source>Request payments (generates QR codes and vrq: URIs)</source>
+        <translation>Anmod om betaling (genrerer QR kode og vrq URL)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -618,24 +618,24 @@
         <translation>Vis masternoder</translation>
     </message>
     <message>
-        <source>&amp;About Mrq</source>
-        <translation>&amp;Om Mrq kerne</translation>
+        <source>&amp;About vrq</source>
+        <translation>&amp;Om vrq kerne</translation>
     </message>
     <message>
-        <source>Show information about Mrq</source>
-        <translation>Vis information om Mrq kerne</translation>
+        <source>Show information about vrq</source>
+        <translation>Vis information om vrq kerne</translation>
     </message>
     <message>
-        <source>Modify configuration options for Mrq</source>
-        <translation>Ret konfigurationsindstillinger for Mrq</translation>
+        <source>Modify configuration options for vrq</source>
+        <translation>Ret konfigurationsindstillinger for vrq</translation>
     </message>
     <message>
-        <source>Sign messages with your Mrq addresses to prove you own them</source>
-        <translation>Underskriv beskeder med Deres Mrq adresser for at bekræfte at De ejer dem.</translation>
+        <source>Sign messages with your vrq addresses to prove you own them</source>
+        <translation>Underskriv beskeder med Deres vrq adresser for at bekræfte at De ejer dem.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Mrq addresses</source>
-        <translation>Verificer besked for at sikre, at den er underskrevet med den opgivne Mrq adresse</translation>
+        <source>Verify messages to ensure they were signed with specified vrq addresses</source>
+        <translation>Verificer besked for at sikre, at den er underskrevet med den opgivne vrq adresse</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -666,8 +666,8 @@
         <translation>ÅbnMasternode konfigurationsfil</translation>
     </message>
     <message>
-        <source>Open a Mrq: URI or payment request</source>
-        <translation>Åbn en Mrq URl eller betalingsanmodning</translation>
+        <source>Open a vrq: URI or payment request</source>
+        <translation>Åbn en vrq URl eller betalingsanmodning</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -678,12 +678,12 @@
         <translation>Blockexplorer vindue</translation>
     </message>
     <message>
-        <source>Show the Mrq help message to get a list with possible Mrq command-line options</source>
-        <translation>Vis hjelpetekster fra Mrq kernen for at få en liste med mulige Mrq kommandolinie-startparametre</translation>
+        <source>Show the vrq help message to get a list with possible vrq command-line options</source>
+        <translation>Vis hjelpetekster fra vrq kernen for at få en liste med mulige vrq kommandolinie-startparametre</translation>
     </message>
     <message>
-        <source>Mrq client</source>
-        <translation>Mrq kerneklient</translation>
+        <source>vrq client</source>
+        <translation>vrq kerneklient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -813,8 +813,8 @@ Adresse: %4
         <translation>Tekstmærke</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (mrq.conf).</source>
-        <translation>Ikke alle transaktioner vil blive vist. For at vise alle transaktioner må De sætte "txindex=1" i konfigurationsfilen (mrq.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (vrq.conf).</source>
+        <translation>Ikke alle transaktioner vil blive vist. For at vise alle transaktioner må De sætte "txindex=1" i konfigurationsfilen (vrq.conf).</translation>
     </message>
 </context>
 <context>
@@ -1114,8 +1114,8 @@ Adresse: %4
         <translation>Ret afsenderadresse</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Mrq address.</source>
-        <translation>Den indtastede adresse %1 er ikke en gyldig Mrq adresse</translation>
+        <source>The entered address "%1" is not a valid vrq address.</source>
+        <translation>Den indtastede adresse %1 er ikke en gyldig vrq adresse</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1160,16 +1160,16 @@ Adresse: %4
         <translation>version</translation>
     </message>
     <message>
-        <source>Mrq</source>
-        <translation>Mrq kerne</translation>
+        <source>vrq</source>
+        <translation>vrq kerne</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Mrq</source>
-        <translation>om Mrq kerne</translation>
+        <source>About vrq</source>
+        <translation>om vrq kerne</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1215,16 +1215,16 @@ Adresse: %4
         <translation>Velkommen</translation>
     </message>
     <message>
-        <source>Welcome to Mrq.</source>
-        <translation>Velkommen til Mrq kerne</translation>
+        <source>Welcome to vrq.</source>
+        <translation>Velkommen til vrq kerne</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Mrq will store its data.</source>
-        <translation>Da det er første gang programmet startes, kan De vælge hvor Mrq kernen skal lagre sine data</translation>
+        <source>As this is the first time the program is launched, you can choose where vrq will store its data.</source>
+        <translation>Da det er første gang programmet startes, kan De vælge hvor vrq kernen skal lagre sine data</translation>
     </message>
     <message>
-        <source>Mrq will download and store a copy of the Mrq block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Mrq kernen vil nu hente og gemme en kopi af Mrq blockchain. Der skal være mindst %1GB ledigt på lagermediet, og behovet vil stige efterhånden som tiden går. Selve tegnebogen vil også blive gemt her.</translation>
+        <source>vrq will download and store a copy of the vrq block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>vrq kernen vil nu hente og gemme en kopi af vrq blockchain. Der skal være mindst %1GB ledigt på lagermediet, og behovet vil stige efterhånden som tiden går. Selve tegnebogen vil også blive gemt her.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1235,8 +1235,8 @@ Adresse: %4
         <translation>Anvend en mappe valgt af brugeren</translation>
     </message>
     <message>
-        <source>Mrq</source>
-        <translation>Mrq kerne</translation>
+        <source>vrq</source>
+        <translation>vrq kerne</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1377,12 +1377,12 @@ Adresse: %4
         <translation>Indtast modtageradresse</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Mrq addresses after it matures.
-To Add: enter percentage to give and Mrq address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other vrq addresses after it matures.
+To Add: enter percentage to give and vrq address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>Multisend tillader at De automatisk kan sende op til 100% af Deres belønninger fra såvel indskud som masternodebelønninger til en liste over andre Mrq adressater når den er tilstrækkelig stor. 
-For at tilføje: Indtast procentsatsen De ønsker at overføre samt den Mrq adresse som skal modtage via Multisendsystemet. 
+        <translation>Multisend tillader at De automatisk kan sende op til 100% af Deres belønninger fra såvel indskud som masternodebelønninger til en liste over andre vrq adressater når den er tilstrækkelig stor. 
+For at tilføje: Indtast procentsatsen De ønsker at overføre samt den vrq adresse som skal modtage via Multisendsystemet. 
 For at fjerne: Indtast adressen som skal slettes og klik på slet. 
 Multisend vil ikke fungere med mindre systemet er aktiveret.</translation>
     </message>
@@ -1520,48 +1520,48 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Vælg tilsløringsniveau</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 Mrq</source>
-        <translation>Brug 2 separate masternoder for at tilsløre beløb op til 10000 Mrq</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 vrq</source>
+        <translation>Brug 2 separate masternoder for at tilsløre beløb op til 10000 vrq</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 Mrq</source>
-        <translation>Brug 8 separate masternoder for at tilsløre op til 10000 Mrq</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 vrq</source>
+        <translation>Brug 8 separate masternoder for at tilsløre op til 10000 vrq</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Brug 16 separate masternoder</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 Mrq to anonymize 10000 Mrq</source>
-        <translation>Dette valg er det hurtigste og vil koste i omegnen af 0.025 Mrq for at anonymiser 10000 Mrq</translation>
+        <source>This option is the quickest and will cost about ~0.025 vrq to anonymize 10000 vrq</source>
+        <translation>Dette valg er det hurtigste og vil koste i omegnen af 0.025 vrq for at anonymiser 10000 vrq</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 Mrq to anonymize 10000 Mrq</source>
-        <translation>Dette valg er relativt hurtigt og vil koste i omegnen af 0.05 Mrq for at anonymiser 10000 Mrq</translation>
+        <source>This option is moderately fast and will cost about 0.05 vrq to anonymize 10000 vrq</source>
+        <translation>Dette valg er relativt hurtigt og vil koste i omegnen af 0.05 vrq for at anonymiser 10000 vrq</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Denne mulighed er den langsomste og det mest sikre valg. Valg af maksimal tilsløring vil koste</translation>
     </message>
     <message>
-        <source>0.1 Mrq per 10000 Mrq you anonymize.</source>
-        <translation>0.1 pr 10000 Mrq for at tilsløre.</translation>
+        <source>0.1 vrq per 10000 vrq you anonymize.</source>
+        <translation>0.1 pr 10000 vrq for at tilsløre.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
         <translation>Tilsløringskonfiguration</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Mrq's configuration screen.</source>
-        <translation>Tilsløring blev sat til grundlæggende (%1 og 2 gennemløb) De kan ændre dette hvornår De vil ved at åbne Mrq konfigurationsbillede.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening vrq's configuration screen.</source>
+        <translation>Tilsløring blev sat til grundlæggende (%1 og 2 gennemløb) De kan ændre dette hvornår De vil ved at åbne vrq konfigurationsbillede.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Mrq's configuration screen.</source>
-        <translation>Tilsløring blev sat til høj (%1 og 8 gennemløb) De kan ændre dette hvornår De vil ved at åbne Mrq konfigurationsbillede.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening vrq's configuration screen.</source>
+        <translation>Tilsløring blev sat til høj (%1 og 8 gennemløb) De kan ændre dette hvornår De vil ved at åbne vrq konfigurationsbillede.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Mrq's configuration screen.</source>
-        <translation>Tilsløring blev sat til maksimum (%1 og 16 gennemløb) De kan ændre dette hvornår De vil ved at åbne Mrq konfigurationsbillede.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening vrq's configuration screen.</source>
+        <translation>Tilsløring blev sat til maksimum (%1 og 16 gennemløb) De kan ændre dette hvornår De vil ved at åbne vrq konfigurationsbillede.</translation>
     </message>
 </context>
 <context>
@@ -1622,8 +1622,8 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Hvis De slår "brug af ubekræftede penge tilbage" vil penge tilbage &lt;br/&gt; ikke kunne benyttes før transaktionen er bekræftet mindst en gang. &lt;br/&gt;Dette har også indflydelse på opgørelsen af saldoen.</translation>
     </message>
     <message>
-        <source>Automatically open the Mrq client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Åbn Mrq klientporten på ruteren automatisk. Virker kun hvis UPnP er slået til i ruteren. </translation>
+        <source>Automatically open the vrq client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Åbn vrq klientporten på ruteren automatisk. Virker kun hvis UPnP er slået til i ruteren. </translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1642,12 +1642,12 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Ekspert</translation>
     </message>
     <message>
-        <source>Automatically start Mrq after logging in to the system.</source>
-        <translation>Start Mrq automatisk, når der logges på systemet</translation>
+        <source>Automatically start vrq after logging in to the system.</source>
+        <translation>Start vrq automatisk, når der logges på systemet</translation>
     </message>
     <message>
-        <source>&amp;Start Mrq on system login</source>
-        <translation>&amp;start Mrq når der logges på systemet</translation>
+        <source>&amp;Start vrq on system login</source>
+        <translation>&amp;start vrq når der logges på systemet</translation>
     </message>
     <message>
         <source>This setting determines the amount of individual masternodes that an input will be anonymized through.&lt;br/&gt;More rounds of anonymization gives a higher degree of privacy, but also costs more in fees.</source>
@@ -1662,8 +1662,8 @@ Kontroller adressen og prøv igen.</translation>
         <translation>når dette antal er nået slås tilsløringsfunktonen fra. </translation>
     </message>
     <message>
-        <source>Amount of Mrq to keep anonymized</source>
-        <translation>Antallet af Mrq som skal holdes tilslørede</translation>
+        <source>Amount of vrq to keep anonymized</source>
+        <translation>Antallet af vrq som skal holdes tilslørede</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1690,22 +1690,22 @@ Kontroller adressen og prøv igen.</translation>
         <translation>&amp;netværk</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Mrq.</source>
-        <translation>Vælg sprog her. Ændringerne træder i kraft næste gang Mrq klienten startes</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting vrq.</source>
+        <translation>Vælg sprog her. Ændringerne træder i kraft næste gang vrq klienten startes</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/mrqcoin/mrqcoin-translations</source>
+https://www.transifex.com/vrqcoin/vrqcoin-translations</source>
         <translation>Det valgte sprog mangler, eller oversættelsen er mangelfuld. Hjælp ved at bidrage med oversættelser her:
-https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
+https://www.transifex.com/vrqcoin/vrqcoin-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>MAP port ved hjælp af UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Mrq network through a SOCKS5 proxy.</source>
-        <translation>Tilslut Mrq netværket gennem en SOCKS5 PROXY</translation>
+        <source>Connect to the vrq network through a SOCKS5 proxy.</source>
+        <translation>Tilslut vrq netværket gennem en SOCKS5 PROXY</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1859,8 +1859,8 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
         <translation>Saldi</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Mrq network after a connection is established, but this process has not completed yet.</source>
-        <translation>De viste informationer kan være uddaterede. Deres tegnebog synkronisere automatism med Mrq netværket så snart en forbindelse er etalbleret, men denne proces er ikke færdiggjort endnu. </translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the vrq network after a connection is established, but this process has not completed yet.</source>
+        <translation>De viste informationer kan være uddaterede. Deres tegnebog synkronisere automatism med vrq netværket så snart en forbindelse er etalbleret, men denne proces er ikke færdiggjort endnu. </translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
@@ -1903,8 +1903,8 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
         <translation>Sløret beløb</translation>
     </message>
     <message>
-        <source>0 Mrq / 0 Rounds</source>
-        <translation>0 Mrq / 0 gennemløb</translation>
+        <source>0 vrq / 0 Rounds</source>
+        <translation>0 vrq / 0 gennemløb</translation>
     </message>
     <message>
         <source>Enabled/Disabled</source>
@@ -2059,11 +2059,11 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
         <translation>Ugyldig betalingsadresse: %1</translation>
     </message>
     <message>
-        <source>Cannot start mrq: click-to-pay handler</source>
-        <translation>Kan ikke starte Mrq "klik for at betale" systemet</translation>
+        <source>Cannot start vrq: click-to-pay handler</source>
+        <translation>Kan ikke starte vrq "klik for at betale" systemet</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Mrq address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid vrq address or malformed URI parameters.</source>
         <translation>URl kan ikke fortolkes! Det kan skyldes en ugyldig adresse, eller forkerte URl parametre.</translation>
     </message>
     <message>
@@ -2149,8 +2149,8 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
         <translation>Beløb</translation>
     </message>
     <message>
-        <source>Enter a Mrq address (e.g. %1)</source>
-        <translation>Indtast en Mrq adresse (F.eks. %1)</translation>
+        <source>Enter a vrq address (e.g. %1)</source>
+        <translation>Indtast en vrq adresse (F.eks. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2283,8 +2283,8 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
         <translation>Block chain</translation>
     </message>
     <message>
-        <source>Open the Mrq debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Åbn Mrq debug logfilen fra den aktuelle datamappe. Det kan godt tage lidt tid hvis filen er meget stor.</translation>
+        <source>Open the vrq debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Åbn vrq debug logfilen fra den aktuelle datamappe. Det kan godt tage lidt tid hvis filen er meget stor.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2451,8 +2451,8 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
         <translation>Ud:</translation>
     </message>
     <message>
-        <source>Welcome to the Mrq RPC console.</source>
-        <translation>Velkommen til Mrq RPC konsollet</translation>
+        <source>Welcome to the vrq RPC console.</source>
+        <translation>Velkommen til vrq RPC konsollet</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2522,12 +2522,12 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
         <translation>Valgfri opmærkning som tilknyttes den nye modtageradresse.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Mrq network.</source>
-        <translation>Valgfri besked som vedhæftes betalingsanmodnigen, og som bliver vist når anmodningen åbnes. Note: Beskeden fremsendes ikke sammen med betalingen, når denne sendes ud på Mrq netværket.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the vrq network.</source>
+        <translation>Valgfri besked som vedhæftes betalingsanmodnigen, og som bliver vist når anmodningen åbnes. Note: Beskeden fremsendes ikke sammen med betalingen, når denne sendes ud på vrq netværket.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Mrq network.</source>
-        <translation>Valgfri besked som vedhæftes betalingsanmodnigen, og som bliver vist når anmodningen åbnes. &lt;br&gt;Note: Beskeden fremsendes ikke sammen med betalingen, når denne sendes ud på Mrq netværket.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the vrq network.</source>
+        <translation>Valgfri besked som vedhæftes betalingsanmodnigen, og som bliver vist når anmodningen åbnes. &lt;br&gt;Note: Beskeden fremsendes ikke sammen med betalingen, når denne sendes ud på vrq netværket.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -2759,8 +2759,8 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
         <translation>UTXO størrelse:</translation>
     </message>
     <message>
-        <source>0 Mrq</source>
-        <translation>0 Mrq</translation>
+        <source>0 vrq</source>
+        <translation>0 vrq</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2807,15 +2807,15 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
         <translation>Bekræftelsestid</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uMrqs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uMrqs in fee,&lt;br /&gt;while "at least" pays 1000 uMrqs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Hvis den brugerfastsatte gebyrbetaling er sat til 1000 uMrqs og transaktionen kun fylder 250 bytes, så vil "pr. kilobyte" kun udbetale 250 uMrq i gebyr, &lt;br /&gt; mens "mindst" udbetaler 1000 uMrqs. For transaktioner større end en kilobyte betales i begge tilfælde i forhold til antallet af kilobytes </translation>
+        <source>If the custom fee is set to 1000 uvrqs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uvrqs in fee,&lt;br /&gt;while "at least" pays 1000 uvrqs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Hvis den brugerfastsatte gebyrbetaling er sat til 1000 uvrqs og transaktionen kun fylder 250 bytes, så vil "pr. kilobyte" kun udbetale 250 uvrq i gebyr, &lt;br /&gt; mens "mindst" udbetaler 1000 uvrqs. For transaktioner større end en kilobyte betales i begge tilfælde i forhold til antallet af kilobytes </translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uMrqs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uMrqs in fee,&lt;br /&gt;while "total at least" pays 1000 uMrqs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Hvis den brugerfastsatte gebyrbetaling er sat til 1000 uMrqs og transaktionen kun fylder 250 bytes, så vil "pr. kilobyte" kun udbetale 250 uMrq i gebyr, &lt;br /&gt; mens "Total-mindst" udbetaler 1000 uMrqs. For transaktioner større end en kilobyte betales i begge tilfælde i forhold til antallet af kilobytes </translation>
+        <source>If the custom fee is set to 1000 uvrqs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uvrqs in fee,&lt;br /&gt;while "total at least" pays 1000 uvrqs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Hvis den brugerfastsatte gebyrbetaling er sat til 1000 uvrqs og transaktionen kun fylder 250 bytes, så vil "pr. kilobyte" kun udbetale 250 uvrq i gebyr, &lt;br /&gt; mens "Total-mindst" udbetaler 1000 uvrqs. For transaktioner større end en kilobyte betales i begge tilfælde i forhold til antallet af kilobytes </translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Mrq transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for vrq transactions than the network can process.</source>
         <translation>Betaling af mindste transaktionsgebyr vil være fint så længe der er færre transaktioner end der er plads til i blokkene. &lt;br /&gt; Men opmærksomheden henledes på, at det kan resultere i en transaktion der aldrig bliver bekræftet i det øjeblik der er større behov for transaktioner end netværket har plads til. </translation>
     </message>
     <message>
@@ -2919,8 +2919,8 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
         <translation>Anonyme saldi</translation>
     </message>
     <message>
-        <source>Warning: Invalid Mrq address</source>
-        <translation>Advarsel! Ugyldig Mrq adresse</translation>
+        <source>Warning: Invalid vrq address</source>
+        <translation>Advarsel! Ugyldig vrq adresse</translation>
     </message>
     <message>
         <source>any available funds (not recommended)</source>
@@ -3026,8 +3026,8 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
         <translation>Betal &amp;Til</translation>
     </message>
     <message>
-        <source>The Mrq address to send the payment to</source>
-        <translation>Mrq adressen, som betalingen skal sendes til</translation>
+        <source>The vrq address to send the payment to</source>
+        <translation>vrq adressen, som betalingen skal sendes til</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3039,7 +3039,7 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
-        <translation>Indsæt adresse fra udklmrqholderen.</translation>
+        <translation>Indsæt adresse fra udklvrqholderen.</translation>
     </message>
     <message>
         <source>Alt+P</source>
@@ -3066,8 +3066,8 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
         <translation>Besked</translation>
     </message>
     <message>
-        <source>A message that was attached to the Mrq: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Mrq network.</source>
-        <translation>En besked, der var vedhæftet til Mrq: URl wil blive gemt sammen med transaktionen som reference. Note: Beskeden bliver medsendt transaktionen over netværket.</translation>
+        <source>A message that was attached to the vrq: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the vrq network.</source>
+        <translation>En besked, der var vedhæftet til vrq: URl wil blive gemt sammen med transaktionen som reference. Note: Beskeden bliver medsendt transaktionen over netværket.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -3093,8 +3093,8 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Mrq is shutting down...</source>
-        <translation>Mrq kernen lukker ned</translation>
+        <source>vrq is shutting down...</source>
+        <translation>vrq kernen lukker ned</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3116,8 +3116,8 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
         <translation>De kan underskrive beskeder med Deres adresser or at bevise ejerskab. Vær forsigtig med at underskrive noget De er usikker på såsom forsøg op at narre Dem til at oplyse Deres identitet. Skriv kun under på noget De kan stå inde for, og som De er enig i. </translation>
     </message>
     <message>
-        <source>The Mrq address to sign the message with</source>
-        <translation>Den Mrq adresse, der skal bruges til at underskrive beskeden med.</translation>
+        <source>The vrq address to sign the message with</source>
+        <translation>Den vrq adresse, der skal bruges til at underskrive beskeden med.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3129,7 +3129,7 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
-        <translation>Indsæt adresse fra udklmrqholderen.</translation>
+        <translation>Indsæt adresse fra udklvrqholderen.</translation>
     </message>
     <message>
         <source>Alt+P</source>
@@ -3145,19 +3145,19 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
     </message>
     <message>
         <source>Copy the current signature to the system clipboard</source>
-        <translation>Kopier den aktuelle underskrift til udklmrqholderen.</translation>
+        <translation>Kopier den aktuelle underskrift til udklvrqholderen.</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Mrq address</source>
-        <translation>Underskriv beskeden for at bevise, at De ejer denne Mrq adresse.</translation>
+        <source>Sign the message to prove you own this vrq address</source>
+        <translation>Underskriv beskeden for at bevise, at De ejer denne vrq adresse.</translation>
     </message>
     <message>
-        <source>The Mrq address the message was signed with</source>
-        <translation>Beskeden er underskrevet med denne Mrq adresse</translation>
+        <source>The vrq address the message was signed with</source>
+        <translation>Beskeden er underskrevet med denne vrq adresse</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Mrq address</source>
-        <translation>verificer beskeden for at sikre, at den blev underskrevet med den rigtige Mrq adresse.</translation>
+        <source>Verify the message to ensure it was signed with the specified vrq address</source>
+        <translation>verificer beskeden for at sikre, at den blev underskrevet med den rigtige vrq adresse.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3243,8 +3243,8 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Mrq</source>
-        <translation>Mrq kerne</translation>
+        <source>vrq</source>
+        <translation>vrq kerne</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3259,8 +3259,8 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
         <translation>DASH "core" udviklerne</translation>
     </message>
     <message>
-        <source>The Mrq developers</source>
-        <translation>Mrq "core" udviklerne</translation>
+        <source>The vrq developers</source>
+        <translation>vrq "core" udviklerne</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3791,8 +3791,8 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
         <translation>Send mønter</translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 Mrq.</source>
-        <translation>SwiftTx understøtter ikke afsendelse af så store beløb endnu. Transaktioner er for tiden begrænsede til %1Mrq.</translation>
+        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 vrq.</source>
+        <translation>SwiftTx understøtter ikke afsendelse af så store beløb endnu. Transaktioner er for tiden begrænsede til %1vrq.</translation>
     </message>
 </context>
 <context>
@@ -3835,7 +3835,7 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
     </message>
 </context>
 <context>
-    <name>mrq-core</name>
+    <name>vrq-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = beholdtx metadata. For eksempel information om kontoejer og betalngsanmodninger, 2 = drop TX metadata)</translation>
@@ -3861,8 +3861,8 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
         <translation>Forbind til den opgivne adresse og lyt efter JSON-.RPC forbindelser. Brug [host]:port notation for IPv6. Der kan indsættes flere linier (standard: Forbind til alle interfaces)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Mrq is probably already running.</source>
-        <translation>Kan ikke låse datamappen %s. Mrq kører sandsynligvis allerede.</translation>
+        <source>Cannot obtain a lock on data directory %s. vrq is probably already running.</source>
+        <translation>Kan ikke låse datamappen %s. vrq kører sandsynligvis allerede.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -3881,8 +3881,8 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
         <translation>Slet alle tegnebogens transaktioner og genskab kun fra blokkæden ved at tilføje -rescan i forbindes med opstart.</translation>
     </message>
     <message>
-        <source>Disable all Mrq specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Slå alle Mrq funktioner fra (Masternoder, Tilsløring, SwiftTX, Budgetting)(0-1,default:%u)</translation>
+        <source>Disable all vrq specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <translation>Slå alle vrq funktioner fra (Masternoder, Tilsløring, SwiftTX, Budgetting)(0-1,default:%u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
@@ -3926,12 +3926,12 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
         <translation>Udfør en kommando når den bedste blok ændres (%s in cmd erstattes med blok hashen)</translation>
     </message>
     <message>
-        <source>Fees (in Mrq/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Gebyrer (in Mrq/kb) lavere end dette betragtes som et nul-gebyr for at videresende (default: %s)</translation>
+        <source>Fees (in vrq/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Gebyrer (in vrq/kb) lavere end dette betragtes som et nul-gebyr for at videresende (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in Mrq/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Gebyrer (in Mrq/kb) lavere end dette betragtes som et nul-gebyr for at oprette en transaktion (default: %s)</translation>
+        <source>Fees (in vrq/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Gebyrer (in vrq/kb) lavere end dette betragtes som et nul-gebyr for at oprette en transaktion (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -3983,7 +3983,7 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
     </message>
     <message>
         <source>Obfuscation uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
-        <translation>Tilsløring bruger hele det tilslørede designerede beløb til at sende betalinger. De kan blot tilsløre yderligere Mrq</translation>
+        <translation>Tilsløring bruger hele det tilslørede designerede beløb til at sende betalinger. De kan blot tilsløre yderligere vrq</translation>
     </message>
     <message>
         <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
@@ -3991,7 +3991,7 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
     </message>
     <message>
         <source>Provide liquidity to Obfuscation by infrequently mixing coins on a continual basis (0-100, default: %u, 1=very frequent, high fees, 100=very infrequent, low fees)</source>
-        <translation>Tilfør tilsløring likviditet  ved at tilføje flere Mrq løbende (0-100, default:%u, 1=meget hyppigt, høje gebyrer, 100=sjældent, lave gebyrer)</translation>
+        <translation>Tilfør tilsløring likviditet  ved at tilføje flere vrq løbende (0-100, default:%u, 1=meget hyppigt, høje gebyrer, 100=sjældent, lave gebyrer)</translation>
     </message>
     <message>
         <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect)</source>
@@ -4034,44 +4034,44 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations</translation>
         <translation>Dette produkt anvender software udviklet i OpenSSL projektet til brug i OpenSSL værktøjssættet &lt;https://www.openssl.org/&gt; og kryptosoftware skrevet afEric Young og UPnP software skrevet af Thomas Bernard.</translation>
     </message>
     <message>
-        <source>To use mrqd, or the -server option to mrq-qt, you must set an rpcpassword in the configuration file:
+        <source>To use vrqd, or the -server option to vrq-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=mrqrpc
+rpcuser=vrqrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s "Mrq Alert" admin@foo.com
+for example: alertnotify=echo %%s | mail -s "vrq Alert" admin@foo.com
 </source>
-        <translation>For at bruge mrqd eller -server muligheden sammen med mrq-qt skal der angives et rpc kodeord i konfigurationsfilen:
+        <translation>For at bruge vrqd eller -server muligheden sammen med vrq-qt skal der angives et rpc kodeord i konfigurationsfilen:
 %s
 De anbefales at benytte følgende tilfældige kodeord
-Rpcuser=mrqrpc
+Rpcuser=vrqrpc
 rpcpasswrd=%s
 (Det er ikke nødvendigt at huske dette kodeord)
 Brugernavn og kodeord MÅ IKKE VÆRE ENS!
 Hvis filen ikke eksisterer, opret den med sikkerhedsindstillingen - ejer kun læserettigheder tilladelsen.
 Det anbefales tillige at vælge alertnotify til for at blive orienteret om eventuelle problemer.
-For eksempel: alertnotify=Echo %% | mail - s "Mrq ALARM!" e-mail@administrator.dk
+For eksempel: alertnotify=Echo %% | mail - s "vrq ALARM!" e-mail@administrator.dk
 </translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Mrq is probably already running.</source>
-        <translation>Det var ikke muligt at forbinde %s på denne computer. Mrq kører sandsynligvis allerede.</translation>
+        <source>Unable to bind to %s on this computer. vrq is probably already running.</source>
+        <translation>Det var ikke muligt at forbinde %s på denne computer. vrq kører sandsynligvis allerede.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
         <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret designeret indestående for at gennemføre denne transaktion.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 Mrq.</source>
-        <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret  ikke-designeret indestående for at gennemføre denne transaktion, der ikke ækvivalerer 10000 Mrq.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 vrq.</source>
+        <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret  ikke-designeret indestående for at gennemføre denne transaktion, der ikke ækvivalerer 10000 vrq.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 Mrq.</source>
-        <translation>Det var ikke muligt at allokere tilstrækkelige midler til denne transaktion som er forskellig fra 10000 Mrq.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 vrq.</source>
+        <translation>Det var ikke muligt at allokere tilstrækkelige midler til denne transaktion som er forskellig fra 10000 vrq.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4086,8 +4086,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Mrq ALARM!" e-mail@administrator.d
         <translation>Advarsel! -paytxfee er sat meget højt. Det er dette gebyr De kommer til at betale for transaktionen, hvis De gennemfører. </translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Mrq will not work properly.</source>
-        <translation>Advarsel! Kontroller at computerens dato og tid er korrekt indstillet. Hvis tiden ikke er rigtig, vil Mrq ikke fungere ordentligt.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong vrq will not work properly.</source>
+        <translation>Advarsel! Kontroller at computerens dato og tid er korrekt indstillet. Hvis tiden ikke er rigtig, vil vrq ikke fungere ordentligt.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -4238,8 +4238,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Mrq ALARM!" e-mail@administrator.d
         <translation>Copyright (C) 2015-%i The PIVX Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) %i The Mrq Developers</source>
-        <translation>Copyright (C) %i The Mrq Developers</translation>
+        <source>Copyright (C) %i The vrq Developers</source>
+        <translation>Copyright (C) %i The vrq Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -4310,8 +4310,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Mrq ALARM!" e-mail@administrator.d
         <translation>Fejl ved indlæsning af wallet.dat: Tegnebogen er beskadiget</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Mrq</source>
-        <translation>Fejl ved indlæsning af wallet.dat: Tegnebogen kræver en nyere version af Mrq</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of vrq</source>
+        <translation>Fejl ved indlæsning af wallet.dat: Tegnebogen kræver en nyere version af vrq</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -4362,8 +4362,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Mrq ALARM!" e-mail@administrator.d
         <translation>Læsning af blokken mislykkedes</translation>
     </message>
     <message>
-        <source>Fee (in Mrq/kB) to add to transactions you send (default: %s)</source>
-        <translation>Gebyr (i Mrq/kB) som skal tilføjes transaktionen der sendes (default: %s)</translation>
+        <source>Fee (in vrq/kB) to add to transactions you send (default: %s)</source>
+        <translation>Gebyr (i vrq/kB) som skal tilføjes transaktionen der sendes (default: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -4422,8 +4422,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Mrq ALARM!" e-mail@administrator.d
         <translation>Info:</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Mrq is shutting down.</source>
-        <translation>Initiering af sanitetskontrollen fejlede. Mrq lukker ned. </translation>
+        <source>Initialization sanity check failed. vrq is shutting down.</source>
+        <translation>Initiering af sanitetskontrollen fejlede. vrq lukker ned. </translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -4498,8 +4498,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Mrq ALARM!" e-mail@administrator.d
         <translation>Forsøg at gennemtvinge reparation af korrumperet blokkæde</translation>
     </message>
     <message>
-        <source>Keep N Mrq anonymized (default: %u)</source>
-        <translation>Behold N Mrq anonymiserede (default: %u)</translation>
+        <source>Keep N vrq anonymized (default: %u)</source>
+        <translation>Behold N vrq anonymiserede (default: %u)</translation>
     </message>
     <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
@@ -4998,8 +4998,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Mrq ALARM!" e-mail@administrator.d
         <translation>Tegnebogen er låst</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Mrq to complete</source>
-        <translation>Tegnebogen måtte genskrives. Genstart Mrq for at gøre færdig</translation>
+        <source>Wallet needed to be rewritten: restart vrq to complete</source>
+        <translation>Tegnebogen måtte genskrives. Genstart vrq for at gøre færdig</translation>
     </message>
     <message>
         <source>Wallet options:</source>

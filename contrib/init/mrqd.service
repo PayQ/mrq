@@ -1,19 +1,19 @@
 [Unit]
-Description=MRQ's distributed currency daemon
+Description=vrq's distributed currency daemon
 After=network.target
 
 [Service]
-User=mrq
-Group=mrq
+User=vrq
+Group=vrq
 
 Type=forking
-PIDFile=/var/lib/mrqd/mrqd.pid
+PIDFile=/var/lib/vrqd/vrqd.pid
 
-ExecStart=/usr/bin/mrqd -daemon -pid=/var/lib/mrqd/mrqd.pid \
-          -conf=/etc/mrq/mrq.conf -datadir=/var/lib/mrqd
+ExecStart=/usr/bin/vrqd -daemon -pid=/var/lib/vrqd/vrqd.pid \
+          -conf=/etc/vrq/vrq.conf -datadir=/var/lib/vrqd
 
-ExecStop=-/usr/bin/mrq-cli -conf=/etc/mrq/mrq.conf \
-         -datadir=/var/lib/mrqd stop
+ExecStop=-/usr/bin/vrq-cli -conf=/etc/vrq/vrq.conf \
+         -datadir=/var/lib/vrqd stop
 
 Restart=always
 PrivateTmp=true

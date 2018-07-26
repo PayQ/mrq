@@ -260,6 +260,6 @@
     </message>
     </context>
 <context>
-    <name>mrq-core</name>
+    <name>vrq-core</name>
     </context>
 </TS>

@@ -1,2 +1,2 @@
-usr/local/bin/mrqd usr/bin
-usr/local/bin/mrq-cli usr/bin
+usr/local/bin/vrqd usr/bin
+usr/local/bin/vrq-cli usr/bin

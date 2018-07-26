@@ -10,7 +10,7 @@ import operator
 import os
 import sys
 
-OUT_CPP="qt/mrqstrings.cpp"
+OUT_CPP="qt/vrqstrings.cpp"
 EMPTY=['""']
 
 def parse_po(text):
@@ -74,10 +74,10 @@ f.write("""
 #define UNUSED
 #endif
 """)
-f.write('static const char UNUSED *mrq_strings[] = {\n')
+f.write('static const char UNUSED *vrq_strings[] = {\n')
 messages.sort(key=operator.itemgetter(0))
 for (msgid, msgstr) in messages:
     if msgid != EMPTY:
-        f.write('QT_TRANSLATE_NOOP("mrq-core", %s),\n' % ('\n'.join(msgid)))
+        f.write('QT_TRANSLATE_NOOP("vrq-core", %s),\n' % ('\n'.join(msgid)))
 f.write('};\n')
 f.close()

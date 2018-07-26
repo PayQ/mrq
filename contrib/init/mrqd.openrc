@@ -2,24 +2,24 @@
 
 # backward compatibility for existing gentoo layout
 #
-if [ -d "/var/lib/mrq/.mrq" ]; then
-	BITCOIND_DEFAULT_DATADIR="/var/lib/mrq/.mrq"
+if [ -d "/var/lib/vrq/.vrq" ]; then
+	BITCOIND_DEFAULT_DATADIR="/var/lib/vrq/.vrq"
 else
-	BITCOIND_DEFAULT_DATADIR="/var/lib/mrqd"
+	BITCOIND_DEFAULT_DATADIR="/var/lib/vrqd"
 fi
 
-BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/mrq/mrq.conf}
-BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/mrqd}
-BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/mrqd.pid}
+BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/vrq/vrq.conf}
+BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/vrqd}
+BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/vrqd.pid}
 BITCOIND_DATADIR=${BITCOIND_DATADIR:-${BITCOIND_DEFAULT_DATADIR}}
-BITCOIND_USER=${BITCOIND_USER:-mrq}
-BITCOIND_GROUP=${BITCOIND_GROUP:-mrq}
-BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/mrqd}
+BITCOIND_USER=${BITCOIND_USER:-vrq}
+BITCOIND_GROUP=${BITCOIND_GROUP:-vrq}
+BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/vrqd}
 
-name="Mrq Daemon"
-description="MRQ crypto-currency p2p network daemon"
+name="vrq Daemon"
+description="vrq crypto-currency p2p network daemon"
 
-command="/usr/bin/mrqd"
+command="/usr/bin/vrqd"
 command_args="-pid=\"${BITCOIND_PIDFILE}\" \
 		-conf=\"${BITCOIND_CONFIGFILE}\" \
 		-datadir=\"${BITCOIND_DATADIR}\" \
@@ -65,7 +65,7 @@ checkconfig()
 {
 	if ! grep -qs '^rpcpassword=' "${BITCOIND_CONFIGFILE}" ; then
 		eerror ""
-		eerror "ERROR: You must set a secure rpcpassword to run mrqd."
+		eerror "ERROR: You must set a secure rpcpassword to run vrqd."
 		eerror "The setting must appear in ${BITCOIND_CONFIGFILE}"
 		eerror ""
 		eerror "This password is security critical to securing wallets "
@@ -78,7 +78,7 @@ checkconfig()
 		eerror "It is also recommended that you also set alertnotify so you are "
 		eerror "notified of problems:"
 		eerror ""
-		eerror "ie: alertnotify=echo %%s | mail -s \"Mrq Alert\"" \
+		eerror "ie: alertnotify=echo %%s | mail -s \"vrq Alert\"" \
 			"admin@foo.com"
 		eerror ""
 		return 1

@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018 MRQ Developers
+// Copyright (c) 2018 vrq Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -163,7 +163,7 @@ Value getrawmempool(const Array& params, bool fHelp)
             "{                           (json object)\n"
             "  \"transactionid\" : {       (json object)\n"
             "    \"size\" : n,             (numeric) transaction size in bytes\n"
-            "    \"fee\" : n,              (numeric) transaction fee in mrq\n"
+            "    \"fee\" : n,              (numeric) transaction fee in vrq\n"
             "    \"time\" : n,             (numeric) local time transaction entered pool in seconds since 1 Jan 1970 GMT\n"
             "    \"height\" : n,           (numeric) block height when transaction entered pool\n"
             "    \"startingpriority\" : n, (numeric) priority when transaction entered pool\n"
@@ -403,8 +403,8 @@ Value gettxout(const Array& params, bool fHelp)
             "     \"hex\" : \"hex\",        (string) \n"
             "     \"reqSigs\" : n,          (numeric) Number of required signatures\n"
             "     \"type\" : \"pubkeyhash\", (string) The type, eg pubkeyhash\n"
-            "     \"addresses\" : [          (array of string) array of mrq addresses\n"
-            "     \"mrqaddress\"   	 	(string) mrq address\n"
+            "     \"addresses\" : [          (array of string) array of vrq addresses\n"
+            "     \"vrqaddress\"   	 	(string) vrq address\n"
             "        ,...\n"
             "     ]\n"
             "  },\n"
@@ -560,21 +560,21 @@ Value getchaintips(const Array& params, bool fHelp)
     /* Build up a list of chain tips.  We start with the list of all
        known blocks, and successively remove blocks that appear as pprev
        of another block.  */
-    std::set<const CBlockIndex*, CompareBlocksByHeight> setTmrq;
+    std::set<const CBlockIndex*, CompareBlocksByHeight> setTvrq;
     BOOST_FOREACH (const PAIRTYPE(const uint256, CBlockIndex*) & item, mapBlockIndex)
-        setTmrq.insert(item.second);
+        setTvrq.insert(item.second);
     BOOST_FOREACH (const PAIRTYPE(const uint256, CBlockIndex*) & item, mapBlockIndex) {
         const CBlockIndex* pprev = item.second->pprev;
         if (pprev)
-            setTmrq.erase(pprev);
+            setTvrq.erase(pprev);
     }
 
     // Always report the currently active tip.
-    setTmrq.insert(chainActive.Tip());
+    setTvrq.insert(chainActive.Tip());
 
     /* Construct the output array.  */
     Array res;
-    BOOST_FOREACH (const CBlockIndex* block, setTmrq) {
+    BOOST_FOREACH (const CBlockIndex* block, setTvrq) {
         Object obj;
         obj.push_back(Pair("height", block->nHeight));
         obj.push_back(Pair("hash", block->phashBlock->GetHex()));

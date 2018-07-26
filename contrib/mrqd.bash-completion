@@ -1,12 +1,12 @@
-# bash programmable completion for mrqd(1) and mrq-cli(1)
+# bash programmable completion for vrqd(1) and vrq-cli(1)
 # Copyright (c) 2012,2014 Christian von Roques <roques@mti.ag>
 # Distributed under the MIT/X11 software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-have mrqd && {
+have vrqd && {
 
-# call $mrqd for RPC
-_mrq_rpc() {
+# call $vrqd for RPC
+_vrq_rpc() {
     # determine already specified args necessary for RPC
     local rpcargs=()
     for i in ${COMP_LINE}; do
@@ -16,23 +16,23 @@ _mrq_rpc() {
                 ;;
         esac
     done
-    $mrqd "${rpcargs[@]}" "$@"
+    $vrqd "${rpcargs[@]}" "$@"
 }
 
-# Add mrq accounts to COMPREPLY
-_mrq_accounts() {
+# Add vrq accounts to COMPREPLY
+_vrq_accounts() {
     local accounts
-    accounts=$(_mrq_rpc listaccounts | awk '/".*"/ { a=$1; gsub(/"/, "", a); print a}')
+    accounts=$(_vrq_rpc listaccounts | awk '/".*"/ { a=$1; gsub(/"/, "", a); print a}')
     COMPREPLY=( "${COMPREPLY[@]}" $( compgen -W "$accounts" -- "$cur" ) )
 }
 
-_mrqd() {
+_vrqd() {
     local cur prev words=() cword
-    local mrqd
+    local vrqd
 
-    # save and use original argument to invoke mrqd
-    # mrqd might not be in $PATH
-    mrqd="$1"
+    # save and use original argument to invoke vrqd
+    # vrqd might not be in $PATH
+    vrqd="$1"
 
     COMPREPLY=()
     _get_comp_words_by_ref -n = cur prev words cword
@@ -53,7 +53,7 @@ _mrqd() {
     if ((cword > 3)); then
         case ${words[cword-3]} in
             addmultisigaddress)
-                _mrq_accounts
+                _vrq_accounts
                 return 0
                 ;;
             getbalance|gettxout|importaddress|importprivkey|listreceivedbyaccount|listreceivedbyaddress|listsinceblock)
@@ -74,7 +74,7 @@ _mrqd() {
                 return 0
                 ;;
             move|setaccount)
-                _mrq_accounts
+                _vrq_accounts
                 return 0
                 ;;
         esac
@@ -90,7 +90,7 @@ _mrqd() {
             return 0
             ;;
         getaccountaddress|getaddressesbyaccount|getbalance|getnewaddress|getreceivedbyaccount|listtransactions|move|sendfrom|sendmany)
-            _mrq_accounts
+            _vrq_accounts
             return 0
             ;;
     esac
@@ -114,12 +114,12 @@ _mrqd() {
 
             # only parse --help if senseful
             if [[ -z "$cur" || "$cur" =~ ^- ]]; then
-                helpopts=$($mrqd --help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
+                helpopts=$($vrqd --help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
             fi
 
             # only parse help if senseful
             if [[ -z "$cur" || "$cur" =~ ^[a-z] ]]; then
-                commands=$(_mrq_rpc help 2>/dev/null | awk '$1 ~ /^[a-z]/ { print $1; }')
+                commands=$(_vrq_rpc help 2>/dev/null | awk '$1 ~ /^[a-z]/ { print $1; }')
             fi
 
             COMPREPLY=( $( compgen -W "$helpopts $commands" -- "$cur" ) )
@@ -133,7 +133,7 @@ _mrqd() {
     esac
 }
 
-complete -F _mrqd mrqd mrq-cli
+complete -F _vrqd vrqd vrq-cli
 }
 
 # Local variables:

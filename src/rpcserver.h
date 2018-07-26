@@ -95,7 +95,7 @@ public:
 };
 
 /**
- * MRQ RPC command dispatcher.
+ * vrq RPC command dispatcher.
  */
 class CRPCTable
 {

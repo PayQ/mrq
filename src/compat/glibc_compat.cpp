@@ -3,7 +3,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/mrq-config.h"
+#include "config/vrq-config.h"
 #endif
 
 #include <cstddef>

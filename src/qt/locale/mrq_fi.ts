@@ -62,12 +62,12 @@
         <translation>Vastaanottavat osoitteet</translation>
     </message>
     <message>
-        <source>These are your Mrq addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Nämä ovat sinun Mrq osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
+        <source>These are your vrq addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Nämä ovat sinun vrq osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
     </message>
     <message>
-        <source>These are your Mrq addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Nämä ovat sinun Mrq osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
+        <source>These are your vrq addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Nämä ovat sinun vrq osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -164,16 +164,16 @@
         <translation>Vahvista lompakon salaus</translation>
     </message>
     <message>
-        <source>Mrq will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Mrqs from being stolen by malware infecting your computer.</source>
-        <translation>Mrq sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella Mrqien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
+        <source>vrq will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your vrqs from being stolen by malware infecting your computer.</source>
+        <translation>vrq sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella vrqien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Oletko varma että tahdot salata lompakkosi?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR Mrq&lt;/b&gt;!</source>
-        <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki Mrqisi&lt;/b&gt;</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR vrq&lt;/b&gt;!</source>
+        <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki vrqisi&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -227,8 +227,8 @@
         <translation>&amp;BIP 38 Salaus</translation>
     </message>
     <message>
-        <source>Enter a Mrq Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Syötä Mrq osoite, jonnka tahtoisit salata käyttäen BIP 38.
+        <source>Enter a vrq Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Syötä vrq osoite, jonnka tahtoisit salata käyttäen BIP 38.
 Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityisavaimen.</translation>
     </message>
     <message>
@@ -236,8 +236,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Osoite:</translation>
     </message>
     <message>
-        <source>The Mrq address to sign the message with</source>
-        <translation>Mrq osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The vrq address to sign the message with</source>
+        <translation>vrq osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -268,8 +268,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Mrq address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän Mrq osoitteen</translation>
+        <source>Sign the message to prove you own this vrq address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän vrq osoitteen</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -288,8 +288,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>&amp;BIP 38 salauksen avaus</translation>
     </message>
     <message>
-        <source>The Mrq address the message was signed with</source>
-        <translation>Mrq osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The vrq address the message was signed with</source>
+        <translation>vrq osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -575,16 +575,16 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>&amp;Apua</translation>
     </message>
     <message>
-        <source>Mrq</source>
-        <translation>Mrq Ydin</translation>
+        <source>vrq</source>
+        <translation>vrq Ydin</translation>
     </message>
     <message>
-        <source>Send coins to a Mrq address</source>
-        <translation>Lähetä kolikkoja Mrq osoitteeseen</translation>
+        <source>Send coins to a vrq address</source>
+        <translation>Lähetä kolikkoja vrq osoitteeseen</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and mrq: URIs)</source>
-        <translation>Pyydä maksuja (Generoi QR koodeja ja mrq: URIja)</translation>
+        <source>Request payments (generates QR codes and vrq: URIs)</source>
+        <translation>Pyydä maksuja (Generoi QR koodeja ja vrq: URIja)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -595,24 +595,24 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Selaa masternodeja</translation>
     </message>
     <message>
-        <source>&amp;About Mrq</source>
-        <translation>Mrq &amp;ytimestä</translation>
+        <source>&amp;About vrq</source>
+        <translation>vrq &amp;ytimestä</translation>
     </message>
     <message>
-        <source>Show information about Mrq</source>
-        <translation>Näytä tietoja Mrq Ytimestä</translation>
+        <source>Show information about vrq</source>
+        <translation>Näytä tietoja vrq Ytimestä</translation>
     </message>
     <message>
-        <source>Modify configuration options for Mrq</source>
-        <translation>Muokkaa konfiguraatio vaihtoehtoja Mrq:lle</translation>
+        <source>Modify configuration options for vrq</source>
+        <translation>Muokkaa konfiguraatio vaihtoehtoja vrq:lle</translation>
     </message>
     <message>
-        <source>Sign messages with your Mrq addresses to prove you own them</source>
+        <source>Sign messages with your vrq addresses to prove you own them</source>
         <translation>Allekirjoita viestejä todistaaksesi, että omistat ne.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Mrq addresses</source>
-        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä Mrq osoiteella.</translation>
+        <source>Verify messages to ensure they were signed with specified vrq addresses</source>
+        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä vrq osoiteella.</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -643,8 +643,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Avaa Masternode konfiguraatiotiedosto</translation>
     </message>
     <message>
-        <source>Open a Mrq: URI or payment request</source>
-        <translation>Avaa Mrq: URI tai pyydä maksua</translation>
+        <source>Open a vrq: URI or payment request</source>
+        <translation>Avaa vrq: URI tai pyydä maksua</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -655,12 +655,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Lohkon tutkija näkymä</translation>
     </message>
     <message>
-        <source>Show the Mrq help message to get a list with possible Mrq command-line options</source>
-        <translation>Näytä Mrq Ydin apuviesti saadaksesi lista mahdollisista Mrq komentolinja komennoista.</translation>
+        <source>Show the vrq help message to get a list with possible vrq command-line options</source>
+        <translation>Näytä vrq Ydin apuviesti saadaksesi lista mahdollisista vrq komentolinja komennoista.</translation>
     </message>
     <message>
-        <source>Mrq client</source>
-        <translation>Mrq Ydin asiakasohjelma</translation>
+        <source>vrq client</source>
+        <translation>vrq Ydin asiakasohjelma</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -894,8 +894,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Mrq</source>
-        <translation>Mrq Ydin</translation>
+        <source>vrq</source>
+        <translation>vrq Ydin</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -913,12 +913,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Tervetuloa</translation>
     </message>
     <message>
-        <source>Welcome to Mrq.</source>
-        <translation>Tervetuloa Mrq Ytimeen.</translation>
+        <source>Welcome to vrq.</source>
+        <translation>Tervetuloa vrq Ytimeen.</translation>
     </message>
     <message>
-        <source>Mrq</source>
-        <translation>Mrq Ydin</translation>
+        <source>vrq</source>
+        <translation>vrq Ydin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1091,32 +1091,32 @@ Please check the address and try again.</source>
         <translation>Valitse yksityisyyden taso.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 Mrq</source>
-        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 10000 Mrq</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 vrq</source>
+        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 10000 vrq</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 Mrq</source>
-        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 10000 Mrq</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 vrq</source>
+        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 10000 vrq</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Käytä 16 erillistä masternodea</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 Mrq to anonymize 10000 Mrq</source>
-        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 Mrq anonymoidaksesi 10000 Mrq</translation>
+        <source>This option is the quickest and will cost about ~0.025 vrq to anonymize 10000 vrq</source>
+        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 vrq anonymoidaksesi 10000 vrq</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 Mrq to anonymize 10000 Mrq</source>
-        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 Mrq anonymoidaksesi 10000 Mrq</translation>
+        <source>This option is moderately fast and will cost about 0.05 vrq to anonymize 10000 vrq</source>
+        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 vrq anonymoidaksesi 10000 vrq</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Tämä on hitain ja turvallisin vaihtoehto. Täydesti anonymisoiminen ei maksa mitään.</translation>
     </message>
     <message>
-        <source>0.1 Mrq per 10000 Mrq you anonymize.</source>
-        <translation>0.1 per 10000 Mrq, jotka anonymisoit.</translation>
+        <source>0.1 vrq per 10000 vrq you anonymize.</source>
+        <translation>0.1 per 10000 vrq, jotka anonymisoit.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1165,12 +1165,12 @@ Please check the address and try again.</source>
         <translation>Ekspertti</translation>
     </message>
     <message>
-        <source>Automatically start Mrq after logging in to the system.</source>
-        <translation>Automaattisesti käynnistä Mrq kun kirjaudut sisään.</translation>
+        <source>Automatically start vrq after logging in to the system.</source>
+        <translation>Automaattisesti käynnistä vrq kun kirjaudut sisään.</translation>
     </message>
     <message>
-        <source>&amp;Start Mrq on system login</source>
-        <translation>&amp;Aloita Mrq järjestelmän kirjautumisessa</translation>
+        <source>&amp;Start vrq on system login</source>
+        <translation>&amp;Aloita vrq järjestelmän kirjautumisessa</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -1315,8 +1315,8 @@ Please check the address and try again.</source>
         <translation>Ulos:</translation>
     </message>
     <message>
-        <source>Welcome to the Mrq RPC console.</source>
-        <translation>Tervetuloa Mrq RPC konsoliin.</translation>
+        <source>Welcome to the vrq RPC console.</source>
+        <translation>Tervetuloa vrq RPC konsoliin.</translation>
     </message>
     <message>
         <source>never</source>
@@ -1503,8 +1503,8 @@ Please check the address and try again.</source>
         <translation>ei</translation>
     </message>
     <message>
-        <source>0 Mrq</source>
-        <translation>0 Mrq</translation>
+        <source>0 vrq</source>
+        <translation>0 vrq</translation>
     </message>
     <message>
         <source>Choose...</source>
@@ -1608,8 +1608,8 @@ Please check the address and try again.</source>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The Mrq address to sign the message with</source>
-        <translation>Mrq osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The vrq address to sign the message with</source>
+        <translation>vrq osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1632,12 +1632,12 @@ Please check the address and try again.</source>
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Mrq address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän Mrq osoitteen</translation>
+        <source>Sign the message to prove you own this vrq address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän vrq osoitteen</translation>
     </message>
     <message>
-        <source>The Mrq address the message was signed with</source>
-        <translation>Mrq osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The vrq address the message was signed with</source>
+        <translation>vrq osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1675,8 +1675,8 @@ Please check the address and try again.</source>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Mrq</source>
-        <translation>Mrq Ydin</translation>
+        <source>vrq</source>
+        <translation>vrq Ydin</translation>
     </message>
     </context>
 <context>
@@ -1887,7 +1887,7 @@ Please check the address and try again.</source>
     </message>
     </context>
 <context>
-    <name>mrq-core</name>
+    <name>vrq-core</name>
     <message>
         <source>Error</source>
         <translation>Virhe</translation>

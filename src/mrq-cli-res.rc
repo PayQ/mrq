@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Mrq"
-            VALUE "FileDescription",    "Mrq-cli (OSS RPC client for Mrq)"
+            VALUE "CompanyName",        "vrq"
+            VALUE "FileDescription",    "vrq-cli (OSS RPC client for vrq)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "mrq-cli"
+            VALUE "InternalName",       "vrq-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "mrq-cli.exe"
-            VALUE "ProductName",        "Mrq-cli"
+            VALUE "OriginalFilename",   "vrq-cli.exe"
+            VALUE "ProductName",        "vrq-cli"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

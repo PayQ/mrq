@@ -1,15 +1,15 @@
 #!/bin/bash
 
 TMP_FOLDER=$(mktemp -d)
-CONFIG_FILE='mrq.conf'
-CONFIGFOLDER='/root/.mrq'
-COIN_DAEMON='mrqd'
-COIN_CLI='mrq-cli'
+CONFIG_FILE='vrq.conf'
+CONFIGFOLDER='/root/.vrq'
+COIN_DAEMON='vrqd'
+COIN_CLI='vrq-cli'
 COIN_PATH='/usr/local/bin/'
 COIN_REPO='https://github.com/PayQ/vrc.git'
 COIN_TGZ='https://github.com/PayQ/vrc/releases/download/v3.0.0.0/mirq-3.0.0-x86_64-linux-signed.tar.gz'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
-COIN_NAME='mrq'
+COIN_NAME='vrq'
 COIN_PORT=28028
 RPC_PORT=55622
 
@@ -134,25 +134,25 @@ function enable_firewall() {
 }
 
 function get_ip() {
-  declare -a NODE_mrq
-  for mrq in $(netstat -i | awk '!/Kernel|Iface|lo/ {print $1," "}')
+  declare -a NODE_vrq
+  for vrq in $(netstat -i | awk '!/Kernel|Iface|lo/ {print $1," "}')
   do
-    NODE_mrq+=($(curl --interface $mrq --connect-timeout 2 -s4 icanhazip.com))
+    NODE_vrq+=($(curl --interface $vrq --connect-timeout 2 -s4 icanhazip.com))
   done
 
-  if [ ${#NODE_mrq[@]} -gt 1 ]
+  if [ ${#NODE_vrq[@]} -gt 1 ]
     then
       echo -e "${GREEN}More than one IP. Please type 0 to use the first IP, 1 for the second and so on...${NC}"
       INDEX=0
-      for ip in "${NODE_mrq[@]}"
+      for ip in "${NODE_vrq[@]}"
       do
         echo ${INDEX} $ip
         let INDEX=${INDEX}+1
       done
       read -e choose_ip
-      NODEIP=${NODE_mrq[$choose_ip]}
+      NODEIP=${NODE_vrq[$choose_ip]}
   else
-    NODEIP=${NODE_mrq[0]}
+    NODEIP=${NODE_vrq[0]}
   fi
 }
 

@@ -9,8 +9,8 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between mrq-cli and mrqd)
- * of a given instance of the Mrq system.
+ * CBaseChainParams defines the base parameters (shared between vrq-cli and vrqd)
+ * of a given instance of the vrq system.
  */
 class CBaseChainParams
 {

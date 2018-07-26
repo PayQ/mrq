@@ -1,20 +1,20 @@
-#### Mrq Core Wallet
+#### vrq Core Wallet
 
-MRQ Specifications
+vrq Specifications
 
 Full info
 
-Ticker: MRQ
+Ticker: vrq
 
 Algorithm: X11
 
-Masternode colletral: 5000 MRQ
+Masternode colletral: 5000 vrq
 
 Masternode rewards: 85%
 
-Block reward till block: 6000 - 1 MRQ
+Block reward till block: 6000 - 1 vrq
 
-Block reward: 100 MRQ - 200 MRQ
+Block reward: 100 vrq - 200 vrq
 
 POS start block: 1200
 
@@ -22,6 +22,6 @@ Block Timer: 60 seconds
 
 Maturity: 30 blocks
 
-Max supply: 21 000 000 MRQ
+Max supply: 21 000 000 vrq
 
-Premine: 300 000 MRQ
+Premine: 300 000 vrq

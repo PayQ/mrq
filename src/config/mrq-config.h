@@ -1,9 +1,9 @@
-/* src/config/mrq-config.h.  Generated from mrq-config.h.in by configure.  */
-/* src/config/mrq-config.h.in.  Generated from configure.ac by autoheader.  */
+/* src/config/vrq-config.h.  Generated from vrq-config.h.in by configure.  */
+/* src/config/vrq-config.h.in.  Generated from configure.ac by autoheader.  */
 
-#ifndef Mrq_CONFIG_H
+#ifndef vrq_CONFIG_H
 
-#define Mrq_CONFIG_H
+#define vrq_CONFIG_H
 
 /* Define if building universal (internal helper macro) */
 /* #undef AC_APPLE_UNIVERSAL_BUILD */
@@ -271,13 +271,13 @@
 #define PACKAGE_BUGREPORT "mirq.io"
 
 /* Define to the full name of this package. */
-#define PACKAGE_NAME "Mrq Core"
+#define PACKAGE_NAME "vrq Core"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "Mrq Core 1.0.0"
+#define PACKAGE_STRING "vrq Core 1.0.0"
 
 /* Define to the one symbol short name of this package. */
-#define PACKAGE_TARNAME "mrq"
+#define PACKAGE_TARNAME "vrq"
 
 /* Define to the home page for this package. */
 #define PACKAGE_URL ""
@@ -340,4 +340,4 @@
 /* Define for large files, on AIX-style hosts. */
 /* #undef _LARGE_FILES */
 
-#endif //Mrq_CONFIG_H
+#endif //vrq_CONFIG_H

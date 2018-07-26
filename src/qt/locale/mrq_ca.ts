@@ -270,12 +270,12 @@
         <translation>A&amp;juda</translation>
     </message>
     <message>
-        <source>Mrq</source>
-        <translation>Mrq</translation>
+        <source>vrq</source>
+        <translation>vrq</translation>
     </message>
     <message>
-        <source>&amp;About Mrq</source>
-        <translation>&amp;Sobre Mrq</translation>
+        <source>&amp;About vrq</source>
+        <translation>&amp;Sobre vrq</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -468,12 +468,12 @@
         <translation>versió</translation>
     </message>
     <message>
-        <source>Mrq</source>
-        <translation>Mrq</translation>
+        <source>vrq</source>
+        <translation>vrq</translation>
     </message>
     <message>
-        <source>About Mrq</source>
-        <translation>Sobre Mrq</translation>
+        <source>About vrq</source>
+        <translation>Sobre vrq</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -491,12 +491,12 @@
         <translation>Benvingut</translation>
     </message>
     <message>
-        <source>Welcome to Mrq</source>
-        <translation>Benvingut a Mrq</translation>
+        <source>Welcome to vrq</source>
+        <translation>Benvingut a vrq</translation>
     </message>
     <message>
-        <source>Mrq</source>
-        <translation>Mrq</translation>
+        <source>vrq</source>
+        <translation>vrq</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1048,8 +1048,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Mrq</source>
-        <translation>Mrq</translation>
+        <source>vrq</source>
+        <translation>vrq</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -1200,7 +1200,7 @@
     </message>
     </context>
 <context>
-    <name>mrq-core</name>
+    <name>vrq-core</name>
     <message>
         <source>Error</source>
         <translation>Error</translation>

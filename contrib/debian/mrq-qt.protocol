@@ -1,6 +1,6 @@
 [Protocol]
-exec=mrq-qt '%u'
-protocol=mrq
+exec=vrq-qt '%u'
+protocol=vrq
 input=none
 output=none
 helper=true

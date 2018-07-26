@@ -7,7 +7,7 @@
 #define BITCOIN_COMPAT_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/mrq-config.h"
+#include "config/vrq-config.h"
 #endif
 
 #ifdef WIN32

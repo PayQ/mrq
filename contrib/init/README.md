@@ -1,10 +1,10 @@
 Sample configuration files for:
 
-SystemD: mrqd.service
-Upstart: mrqd.conf
-OpenRC:  mrqd.openrc
-         mrqd.openrcconf
-CentOS:  mrqd.init
+SystemD: vrqd.service
+Upstart: vrqd.conf
+OpenRC:  vrqd.openrc
+         vrqd.openrcconf
+CentOS:  vrqd.init
 
 have been made available to assist packagers in creating node packages here.
 

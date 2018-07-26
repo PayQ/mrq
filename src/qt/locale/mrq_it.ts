@@ -62,12 +62,12 @@
         <translation>Indirizzi di ricezione</translation>
     </message>
     <message>
-        <source>These are your MRQ addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Questi sono gli indirizzi MRQ per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo di ricezione prima di inviare valuta.</translation>
+        <source>These are your vrq addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Questi sono gli indirizzi vrq per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo di ricezione prima di inviare valuta.</translation>
     </message>
     <message>
-        <source>These are your MRQ addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Questi sono gli indirizzi MRQ per la ricezione di pagamenti. Si raccomanda di utilizzare un indirizzo diverso per ogni transazione.</translation>
+        <source>These are your vrq addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Questi sono gli indirizzi vrq per la ricezione di pagamenti. Si raccomanda di utilizzare un indirizzo diverso per ogni transazione.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Conferma cifratura portafoglio</translation>
     </message>
     <message>
-        <source>MRQ will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Mrqs from being stolen by malware infecting your computer.</source>
-        <translation>MRQ verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi Mrq dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
+        <source>vrq will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your vrqs from being stolen by malware infecting your computer.</source>
+        <translation>vrq verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi vrq dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Confermi di voler crittografare il portafoglio?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR Mrq&lt;/b&gt;!</source>
-        <translation>Attenzione: Se crittografi il portafoglio e poi perdi la parola d'ordine, &lt;b&gt;PERDERAI TUTTI I TUOI Mrq&lt;7b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR vrq&lt;/b&gt;!</source>
+        <translation>Attenzione: Se crittografi il portafoglio e poi perdi la parola d'ordine, &lt;b&gt;PERDERAI TUTTI I TUOI vrq&lt;7b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -239,16 +239,16 @@
         <translation>&amp;BIP 38 Criptato</translation>
     </message>
     <message>
-        <source>Enter a Mrq Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Inserisci un indirizzo Mrq che desideri crittografare utilizzando BIP 38. Inserisci una passphrase nella casella centrale. Premi Cripta per calcolare la chiave privata crittografata.</translation>
+        <source>Enter a vrq Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Inserisci un indirizzo vrq che desideri crittografare utilizzando BIP 38. Inserisci una passphrase nella casella centrale. Premi Cripta per calcolare la chiave privata crittografata.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Indirizzo:</translation>
     </message>
     <message>
-        <source>The MRQ address to sign the message with</source>
-        <translation>L'indirizzo MRQ per firmare il messaggio con</translation>
+        <source>The vrq address to sign the message with</source>
+        <translation>L'indirizzo vrq per firmare il messaggio con</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Copiare la firma corrente negli Appunti di sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this MRQ address</source>
-        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo MRQ</translation>
+        <source>Sign the message to prove you own this vrq address</source>
+        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo vrq</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Immettere la chiave privata codificata BIP 38. Inserire la passphrase nella casella centrale. Fare clic su Decripta Chiave per calcolare la chiave privata. Dopo che la chiave viene decrittata, cliccando su "Importa indirizzo" verrà aggiunta questa chiave privata al portafoglio.</translation>
     </message>
     <message>
-        <source>The MRQ address the message was signed with</source>
-        <translation>L'indirizzo MRQ con cui è stato firmato il messaggio</translation>
+        <source>The vrq address the message was signed with</source>
+        <translation>L'indirizzo vrq con cui è stato firmato il messaggio</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified MRQ address</source>
-        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo MRQ specificato </translation>
+        <source>Verify the message to ensure it was signed with the specified vrq address</source>
+        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo vrq specificato </translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -590,16 +590,16 @@
         <translation>Schede degli strumenti</translation>
     </message>
     <message>
-        <source>Mrq</source>
-        <translation>Mrq</translation>
+        <source>vrq</source>
+        <translation>vrq</translation>
     </message>
     <message>
-        <source>Send coins to a MRQ address</source>
-        <translation>Invia monete all' indirizzo MRQ</translation>
+        <source>Send coins to a vrq address</source>
+        <translation>Invia monete all' indirizzo vrq</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and mrq: URIs)</source>
-        <translation>Richiedi pagamenti (genera codici QR e mrq: URIs)</translation>
+        <source>Request payments (generates QR codes and vrq: URIs)</source>
+        <translation>Richiedi pagamenti (genera codici QR e vrq: URIs)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -610,24 +610,24 @@
         <translation>Esplora i masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Mrq</source>
-        <translation>&amp;Informazioni Mrq</translation>
+        <source>&amp;About vrq</source>
+        <translation>&amp;Informazioni vrq</translation>
     </message>
     <message>
-        <source>Show information about Mrq</source>
-        <translation>Visualizza informazioni su Mrq</translation>
+        <source>Show information about vrq</source>
+        <translation>Visualizza informazioni su vrq</translation>
     </message>
     <message>
-        <source>Modify configuration options for MRQ</source>
-        <translation>Modifica le opzioni di configurazione per MRQ</translation>
+        <source>Modify configuration options for vrq</source>
+        <translation>Modifica le opzioni di configurazione per vrq</translation>
     </message>
     <message>
-        <source>Sign messages with your MRQ addresses to prove you own them</source>
-        <translation>Firma i messaggi con i tuoi indirizzi MRQ per dimostrare di essere il proprietario </translation>
+        <source>Sign messages with your vrq addresses to prove you own them</source>
+        <translation>Firma i messaggi con i tuoi indirizzi vrq per dimostrare di essere il proprietario </translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified MRQ addresses</source>
-        <translation>Verifica i messaggi per assicurarsi che siano stati firmati con indirizzi MRQ specifici</translation>
+        <source>Verify messages to ensure they were signed with specified vrq addresses</source>
+        <translation>Verifica i messaggi per assicurarsi che siano stati firmati con indirizzi vrq specifici</translation>
     </message>
     <message>
         <source>Encrypt and decrypt private keys using a passphrase</source>
@@ -638,16 +638,16 @@
         <translation>Impostazioni MultiSend</translation>
     </message>
     <message>
-        <source>Open a MRQ: URI or payment request</source>
-        <translation>Apri un MRQ: URI o richiesta di pagamento</translation>
+        <source>Open a vrq: URI or payment request</source>
+        <translation>Apri un vrq: URI o richiesta di pagamento</translation>
     </message>
     <message>
         <source>Block explorer window</source>
         <translation>Finestra Block Explorer</translation>
     </message>
     <message>
-        <source>Show the Mrq help message to get a list with possible MRQ command-line options</source>
-        <translation>Mostra il messaggio di aiuto Mrq per ottenere un elenco con le possibili opzioni di riga di comando MRQ</translation>
+        <source>Show the vrq help message to get a list with possible vrq command-line options</source>
+        <translation>Mostra il messaggio di aiuto vrq per ottenere un elenco con le possibili opzioni di riga di comando vrq</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -753,8 +753,8 @@ MultiSend: %1</translation>
         <translation>Cerca</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (mrq.conf).</source>
-        <translation>Non tutte le transazioni verranno visualizzate. Per vedere tutte le transazioni è necessario aggiungere txindex=1 nel file di configurazione (mrq.conf)</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (vrq.conf).</source>
+        <translation>Non tutte le transazioni verranno visualizzate. Per vedere tutte le transazioni è necessario aggiungere txindex=1 nel file di configurazione (vrq.conf)</translation>
     </message>
 </context>
 <context>
@@ -893,8 +893,8 @@ MultiSend: %1</translation>
         <translation>versione</translation>
     </message>
     <message>
-        <source>Mrq</source>
-        <translation>Mrq</translation>
+        <source>vrq</source>
+        <translation>vrq</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
@@ -920,8 +920,8 @@ MultiSend: %1</translation>
         <translation>Benvenuto</translation>
     </message>
     <message>
-        <source>Mrq</source>
-        <translation>Mrq</translation>
+        <source>vrq</source>
+        <translation>vrq</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1106,8 +1106,8 @@ MultiSend: %1</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The MRQ address to sign the message with</source>
-        <translation>L'indirizzo MRQ per firmare il messaggio con</translation>
+        <source>The vrq address to sign the message with</source>
+        <translation>L'indirizzo vrq per firmare il messaggio con</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1130,16 +1130,16 @@ MultiSend: %1</translation>
         <translation>Copiare la firma corrente negli Appunti di sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this MRQ address</source>
-        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo MRQ</translation>
+        <source>Sign the message to prove you own this vrq address</source>
+        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo vrq</translation>
     </message>
     <message>
-        <source>The MRQ address the message was signed with</source>
-        <translation>L'indirizzo MRQ con cui è stato firmato il messaggio</translation>
+        <source>The vrq address the message was signed with</source>
+        <translation>L'indirizzo vrq con cui è stato firmato il messaggio</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified MRQ address</source>
-        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo MRQ specificato </translation>
+        <source>Verify the message to ensure it was signed with the specified vrq address</source>
+        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo vrq specificato </translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1177,8 +1177,8 @@ MultiSend: %1</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Mrq</source>
-        <translation>Mrq</translation>
+        <source>vrq</source>
+        <translation>vrq</translation>
     </message>
     </context>
 <context>
@@ -1273,7 +1273,7 @@ MultiSend: %1</translation>
     </message>
     </context>
 <context>
-    <name>mrq-core</name>
+    <name>vrq-core</name>
     <message>
         <source>Error</source>
         <translation>Errore</translation>

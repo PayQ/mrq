@@ -1,12 +1,12 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018 MRQ Developers
+// Copyright (c) 2018 vrq Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/mrq-config.h"
+#include "config/vrq-config.h"
 #endif
 
 #include "optionsmodel.h"
@@ -62,7 +62,7 @@ void OptionsModel::Init()
 
     // Display
     if (!settings.contains("nDisplayUnit"))
-        settings.setValue("nDisplayUnit", BitcoinUnits::Mrq);
+        settings.setValue("nDisplayUnit", BitcoinUnits::vrq);
     nDisplayUnit = settings.value("nDisplayUnit").toInt();
 
     if (!settings.contains("strThirdPartyTxUrls"))
@@ -76,11 +76,11 @@ void OptionsModel::Init()
     if (!settings.contains("nObfuscationRounds"))
         settings.setValue("nObfuscationRounds", 2);
 
-    if (!settings.contains("nAnonymizeMrqAmount"))
-        settings.setValue("nAnonymizeMrqAmount", 1000);
+    if (!settings.contains("nAnonymizevrqAmount"))
+        settings.setValue("nAnonymizevrqAmount", 1000);
 
     nObfuscationRounds = settings.value("nObfuscationRounds").toLongLong();
-    nAnonymizeMrqAmount = settings.value("nAnonymizeMrqAmount").toLongLong();
+    nAnonymizevrqAmount = settings.value("nAnonymizevrqAmount").toLongLong();
 
     if (!settings.contains("fShowMasternodesTab"))
         settings.setValue("fShowMasternodesTab", masternodeConfig.getCount());
@@ -147,8 +147,8 @@ void OptionsModel::Init()
 
     if (settings.contains("nObfuscationRounds"))
         SoftSetArg("-obfuscationrounds", settings.value("nObfuscationRounds").toString().toStdString());
-    if (settings.contains("nAnonymizeMrqAmount"))
-        SoftSetArg("-anonymizemrqamount", settings.value("nAnonymizeMrqAmount").toString().toStdString());
+    if (settings.contains("nAnonymizevrqAmount"))
+        SoftSetArg("-anonymizevrqamount", settings.value("nAnonymizevrqAmount").toString().toStdString());
 
     language = settings.value("language").toString();
 }
@@ -159,7 +159,7 @@ void OptionsModel::Reset()
 
     // Remove all entries from our QSettings object
     settings.clear();
-    resetSettings = true; // Needed in mrq.cpp during shotdown to also remove the window positions
+    resetSettings = true; // Needed in vrq.cpp during shotdown to also remove the window positions
 
     // default setting for OptionsModel::StartAtStartup - disabled
     if (GUIUtil::GetStartOnSystemStartup())
@@ -228,8 +228,8 @@ QVariant OptionsModel::data(const QModelIndex& index, int role) const
             return settings.value("nThreadsScriptVerif");
         case ObfuscationRounds:
             return QVariant(nObfuscationRounds);
-        case AnonymizeMrqAmount:
-            return QVariant(nAnonymizeMrqAmount);
+        case AnonymizevrqAmount:
+            return QVariant(nAnonymizevrqAmount);
         case Listen:
             return settings.value("fListen");
         default:
@@ -338,10 +338,10 @@ bool OptionsModel::setData(const QModelIndex& index, const QVariant& value, int 
             settings.setValue("nObfuscationRounds", nObfuscationRounds);
             emit obfuscationRoundsChanged(nObfuscationRounds);
             break;
-        case AnonymizeMrqAmount:
-            nAnonymizeMrqAmount = value.toInt();
-            settings.setValue("nAnonymizeMrqAmount", nAnonymizeMrqAmount);
-            emit anonymizeMrqAmountChanged(nAnonymizeMrqAmount);
+        case AnonymizevrqAmount:
+            nAnonymizevrqAmount = value.toInt();
+            settings.setValue("nAnonymizevrqAmount", nAnonymizevrqAmount);
+            emit anonymizevrqAmountChanged(nAnonymizevrqAmount);
             break;
         case CoinControlFeatures:
             fCoinControlFeatures = value.toBool();

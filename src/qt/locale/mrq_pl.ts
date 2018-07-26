@@ -148,8 +148,8 @@
         <translation>Czy na pewno chcesz zakodować portfel?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR Mrq&lt;/b&gt;!</source>
-        <translation>Ostrzeżenie: Jeżeli zakodujesz portfel i stracisz do niego hasło , UTRACISZ WSZYSTKIE Mrq!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR vrq&lt;/b&gt;!</source>
+        <translation>Ostrzeżenie: Jeżeli zakodujesz portfel i stracisz do niego hasło , UTRACISZ WSZYSTKIE vrq!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -227,8 +227,8 @@
         <translation>Zakodowany klucz:</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this MRQ address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres MRQ jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this vrq address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres vrq jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -518,16 +518,16 @@
         <translation>&amp;Pomoc</translation>
     </message>
     <message>
-        <source>Mrq</source>
+        <source>vrq</source>
         <translation>&amp;Rdzeń bitcoin</translation>
     </message>
     <message>
-        <source>Send coins to a MRQ address</source>
-        <translation>Wyślij monety do adresu MRQ</translation>
+        <source>Send coins to a vrq address</source>
+        <translation>Wyślij monety do adresu vrq</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and mrq: URIs)</source>
-        <translation>Zarządaj płatności (generuje kod QR i mrq:URI)</translation>
+        <source>Request payments (generates QR codes and vrq: URIs)</source>
+        <translation>Zarządaj płatności (generuje kod QR i vrq:URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -538,24 +538,24 @@
         <translation>Przeglądaj masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Mrq</source>
+        <source>&amp;About vrq</source>
         <translation>&amp;O rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Show information about Mrq</source>
+        <source>Show information about vrq</source>
         <translation>Pokaż informacje o rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Modify configuration options for MRQ</source>
-        <translation>Modyfikuj opcje konfiguracji MRQ</translation>
+        <source>Modify configuration options for vrq</source>
+        <translation>Modyfikuj opcje konfiguracji vrq</translation>
     </message>
     <message>
-        <source>Sign messages with your MRQ addresses to prove you own them</source>
-        <translation>Zatwierdź wiadomość z twoimi adresami MRQ, by udowodnić, że jesteś w ich posiadaniu</translation>
+        <source>Sign messages with your vrq addresses to prove you own them</source>
+        <translation>Zatwierdź wiadomość z twoimi adresami vrq, by udowodnić, że jesteś w ich posiadaniu</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified MRQ addresses</source>
-        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu MRQ</translation>
+        <source>Verify messages to ensure they were signed with specified vrq addresses</source>
+        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu vrq</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -582,8 +582,8 @@
         <translation>Otwórz &amp;Plik konfiguracji Masternode</translation>
     </message>
     <message>
-        <source>Open a MRQ: URI or payment request</source>
-        <translation>Otwórz MRQ: URI i żądanie zapłaty</translation>
+        <source>Open a vrq: URI or payment request</source>
+        <translation>Otwórz vrq: URI i żądanie zapłaty</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -594,12 +594,12 @@
         <translation>Okno eksplorera bloków</translation>
     </message>
     <message>
-        <source>Show the Mrq help message to get a list with possible MRQ command-line options</source>
-        <translation>Pokaż wiadomość pomocy rdzenia MRQ, aby dostać listę możliwych opcji MRQ command-line</translation>
+        <source>Show the vrq help message to get a list with possible vrq command-line options</source>
+        <translation>Pokaż wiadomość pomocy rdzenia vrq, aby dostać listę możliwych opcji vrq command-line</translation>
     </message>
     <message>
-        <source>Mrq client</source>
-        <translation>Rdzeń MRQ klient</translation>
+        <source>vrq client</source>
+        <translation>Rdzeń vrq klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -916,7 +916,7 @@ MultiWysyłlka: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Mrq</source>
+        <source>vrq</source>
         <translation>&amp;Rdzeń bitcoin</translation>
     </message>
     </context>
@@ -931,7 +931,7 @@ MultiWysyłlka: %1</translation>
         <translation>Użyj niestandardowej ścieżki danych</translation>
     </message>
     <message>
-        <source>Mrq</source>
+        <source>vrq</source>
         <translation>&amp;Rdzeń bitcoin</translation>
     </message>
     <message>
@@ -1192,16 +1192,16 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>Zezwól na przychodzące połączenia</translation>
     </message>
     <message>
-        <source>Automatically start MRQ after logging in to the system.</source>
-        <translation>Automatycznie uruchom MRQ po zalogowaniu do systemu</translation>
+        <source>Automatically start vrq after logging in to the system.</source>
+        <translation>Automatycznie uruchom vrq po zalogowaniu do systemu</translation>
     </message>
     <message>
-        <source>&amp;Start MRQ on system login</source>
-        <translation>&amp;Uruchom MRQ podczas logowania do systemu</translation>
+        <source>&amp;Start vrq on system login</source>
+        <translation>&amp;Uruchom vrq podczas logowania do systemu</translation>
     </message>
     <message>
-        <source>Amount of MRQ to keep anonymized</source>
-        <translation>Liczba MRQ do anonimizacji</translation>
+        <source>Amount of vrq to keep anonymized</source>
+        <translation>Liczba vrq do anonimizacji</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1220,18 +1220,18 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>&amp;Sieć</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting MRQ.</source>
-        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie MRQ</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting vrq.</source>
+        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie vrq</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/mrqcoin/mrqcoin-translations</source>
+https://www.transifex.com/vrqcoin/vrqcoin-translations</source>
         <translation>Brakuje języka bądź nieukończona pełnego tłumaczenia? Pomóż w tłumaczeniu tutaj:
-https://www.transifex.com/mrqcoin/mrqcoin-translations </translation>
+https://www.transifex.com/vrqcoin/vrqcoin-translations </translation>
     </message>
     <message>
-        <source>Connect to the MRQ network through a SOCKS5 proxy.</source>
-        <translation>Połącz z siecią MRQ poprzez SOCKS5 proxy.</translation>
+        <source>Connect to the vrq network through a SOCKS5 proxy.</source>
+        <translation>Połącz z siecią vrq poprzez SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1373,7 +1373,7 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations </translation>
         <translation>Status:</translation>
     </message>
     <message>
-        <source>0 Mrq / 0 Rounds</source>
+        <source>0 vrq / 0 Rounds</source>
         <translation>0 OIVX / 0 Rund</translation>
     </message>
     <message>
@@ -1458,8 +1458,8 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations </translation>
         <translation>Liczba</translation>
     </message>
     <message>
-        <source>Enter a MRQ address (e.g. %1)</source>
-        <translation>Wprowadź adres MRQ (np. %1)</translation>
+        <source>Enter a vrq address (e.g. %1)</source>
+        <translation>Wprowadź adres vrq (np. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1897,8 +1897,8 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations </translation>
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this MRQ address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres MRQ jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this vrq address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres vrq jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -1932,7 +1932,7 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations </translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Mrq</source>
+        <source>vrq</source>
         <translation>&amp;Rdzeń bitcoin</translation>
     </message>
     </context>
@@ -2024,7 +2024,7 @@ https://www.transifex.com/mrqcoin/mrqcoin-translations </translation>
     </message>
     </context>
 <context>
-    <name>mrq-core</name>
+    <name>vrq-core</name>
     <message>
         <source>Error</source>
         <translation>Błąd</translation>
